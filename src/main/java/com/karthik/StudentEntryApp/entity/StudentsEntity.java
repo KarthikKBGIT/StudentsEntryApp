@@ -15,7 +15,7 @@ import lombok.NoArgsConstructor;
 public class StudentsEntity {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @NotBlank(message = "Please provide the name in request body")

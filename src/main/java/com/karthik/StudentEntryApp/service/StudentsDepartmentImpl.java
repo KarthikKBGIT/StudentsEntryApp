@@ -72,17 +72,17 @@ public class StudentsDepartmentImpl implements StudentsService{
         }
         StudentsEntity studentsEntity1 = studentsEntity.get();
         if(Objects.nonNull(studentsEntity1.getName()) &&
-        !"".equalsIgnoreCase(String.valueOf(studentsEntityRequest.getName()))){
+        !studentsEntityRequest.getName().isEmpty()){
             studentsEntity1.setName(studentsEntityRequest.getName());
         }
 
         if(Objects.nonNull(studentsEntity1.getDepartment()) &&
-                !"".equalsIgnoreCase(String.valueOf(studentsEntityRequest.getDepartment()))){
+                !studentsEntityRequest.getDepartment().isEmpty()){
             studentsEntity1.setDepartment(studentsEntityRequest.getDepartment());
         }
 
         if(Objects.nonNull(studentsEntity1.getState()) &&
-                !"".equalsIgnoreCase(String.valueOf(studentsEntityRequest.getState()))){
+                !studentsEntityRequest.getState().isEmpty()){
             studentsEntity1.setState(studentsEntityRequest.getState());
         }
         return studentsRepository.save(studentsEntity1);
