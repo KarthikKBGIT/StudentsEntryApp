@@ -64,21 +64,26 @@ public class StudentsDepartmentImpl implements StudentsService{
     }
 
     @Override
-    public StudentsEntity updateStudentById(Long id, StudentsEntity studentsEntity) {
-        StudentsEntity studentsEntity1 = studentsRepository.findById(id).get();
+    public StudentsEntity updateStudentById(Long id, StudentsEntity studentsEntityRequest) throws StudentIDNotFound {
+        Optional<StudentsEntity> studentsEntity =  studentsRepository.findById(id);
+        if(studentsEntity.isEmpty()){
+            logger.info("No records found for the ID: " + id);
+            throw new StudentIDNotFound("Student ID: " + id + " Not Found");
+        }
+        StudentsEntity studentsEntity1 = studentsEntity.get();
         if(Objects.nonNull(studentsEntity1.getName()) &&
-        !"".equalsIgnoreCase(String.valueOf(studentsEntity.getName()))){
-            studentsEntity1.setName(studentsEntity.getName());
+        !"".equalsIgnoreCase(String.valueOf(studentsEntityRequest.getName()))){
+            studentsEntity1.setName(studentsEntityRequest.getName());
         }
 
         if(Objects.nonNull(studentsEntity1.getDepartment()) &&
-                !"".equalsIgnoreCase(String.valueOf(studentsEntity.getDepartment()))){
-            studentsEntity1.setDepartment(studentsEntity.getDepartment());
+                !"".equalsIgnoreCase(String.valueOf(studentsEntityRequest.getDepartment()))){
+            studentsEntity1.setDepartment(studentsEntityRequest.getDepartment());
         }
 
         if(Objects.nonNull(studentsEntity1.getState()) &&
-                !"".equalsIgnoreCase(String.valueOf(studentsEntity.getState()))){
-            studentsEntity1.setState(studentsEntity.getState());
+                !"".equalsIgnoreCase(String.valueOf(studentsEntityRequest.getState()))){
+            studentsEntity1.setState(studentsEntityRequest.getState());
         }
         return studentsRepository.save(studentsEntity1);
     }

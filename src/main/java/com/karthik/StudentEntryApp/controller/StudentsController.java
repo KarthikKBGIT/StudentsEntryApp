@@ -54,7 +54,7 @@ public class StudentsController {
 
     @RequestMapping(value = "/students/{id}", method = RequestMethod.PUT)
     public StudentsEntity updateStudentById(@PathVariable("id") Long id,
-                                            @RequestBody StudentsEntity studentsEntity){
+                                            @RequestBody StudentsEntity studentsEntity) throws StudentIDNotFound {
         logger.info("Received request to update student by ID: " + id + " with data: " + studentsEntity);
         return studentsService.updateStudentById(id, studentsEntity);
     }

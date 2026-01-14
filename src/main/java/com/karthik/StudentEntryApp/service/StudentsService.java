@@ -18,6 +18,6 @@ public interface StudentsService {
 
     public void deleteStudentById(Long id) throws StudentIDNotFound;
 
-    public StudentsEntity updateStudentById(Long id, StudentsEntity studentsEntity);
+    public StudentsEntity updateStudentById(Long id, StudentsEntity studentsEntity) throws StudentIDNotFound;
 
 }
