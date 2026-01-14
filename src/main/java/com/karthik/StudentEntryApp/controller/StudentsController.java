@@ -8,12 +8,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.logging.Logger;
 
 @RestController
 public class StudentsController {
 
     @Autowired
     StudentsDepartmentImpl studentsService;
+
+    Logger logger = Logger.getLogger(StudentsController.class.getName());
 
     @RequestMapping(value = "/students", method = RequestMethod.POST)
     public StudentsEntity saveStudent(@Valid @RequestBody StudentsEntity studentsEntity) {
@@ -31,7 +34,8 @@ public class StudentsController {
     }
 
     @RequestMapping(value = "/students/name/('{name}')", method = RequestMethod.GET)
-    public List<StudentsEntity> fetchStudentsByName(String name){
+    public List<StudentsEntity> fetchStudentsByName(@PathVariable("name") String name){
+        logger.info("Inside fetchStudentsByName, Fetching student details by name: " + name);
         return studentsService.fetchStudentsByName(name);
     }
 

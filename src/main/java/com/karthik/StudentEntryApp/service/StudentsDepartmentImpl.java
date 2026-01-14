@@ -1,5 +1,6 @@
 package com.karthik.StudentEntryApp.service;
 
+import com.karthik.StudentEntryApp.controller.StudentsController;
 import com.karthik.StudentEntryApp.entity.StudentsEntity;
 import com.karthik.StudentEntryApp.error.StudentIDNotFound;
 import com.karthik.StudentEntryApp.repository.StudentsRepository;
@@ -9,11 +10,14 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
+import java.util.logging.Logger;
 
 @Service
 public class StudentsDepartmentImpl implements StudentsService{
     @Autowired
     private StudentsRepository studentsRepository;
+
+    Logger logger = Logger.getLogger(StudentsController.class.getName());
 
     @Override
     public StudentsEntity saveStudent(StudentsEntity studentsEntity) {
@@ -38,6 +42,7 @@ public class StudentsDepartmentImpl implements StudentsService{
 
     @Override
     public List<StudentsEntity> fetchStudentsByName(String name) {
+        logger.info("Fetching details for name: " + name);
         return studentsRepository.fetchStudentsByName(name);
     }
 
