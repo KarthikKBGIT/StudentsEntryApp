@@ -3,6 +3,7 @@ package com.karthik.StudentEntryApp.service;
 import com.karthik.StudentEntryApp.controller.StudentsController;
 import com.karthik.StudentEntryApp.entity.StudentsEntity;
 import com.karthik.StudentEntryApp.error.StudentIDNotFound;
+import com.karthik.StudentEntryApp.error.StudentNameNotFound;
 import com.karthik.StudentEntryApp.repository.StudentsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -35,15 +36,20 @@ public class StudentsDepartmentImpl implements StudentsService{
         Optional<StudentsEntity>  studentsEntity = studentsRepository.findById(id);
 
         if(studentsEntity.isEmpty()){
-            throw new StudentIDNotFound("Student ID Not Found");
+            throw new StudentIDNotFound(String.format("Student ID: %s Not Found", id));
         }
         return studentsEntity.get();
     }
 
     @Override
-    public List<StudentsEntity> fetchStudentsByName(String name) {
+    public List<StudentsEntity> fetchStudentsByName(String name) throws StudentNameNotFound {
         logger.info("Fetching details for name: " + name);
-        return studentsRepository.fetchStudentsByName(name);
+        List<StudentsEntity> studentsEntities = studentsRepository.fetchStudentsByName(name);
+        if(studentsEntities.isEmpty()){
+            logger.info("No records found for the name: " + name);
+            throw new StudentNameNotFound(String.format("Student Name: %s Not Found", name));
+        }
+        return studentsEntities;
     }
 
     @Override

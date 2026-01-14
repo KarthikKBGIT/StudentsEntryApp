@@ -4,25 +4,25 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 @ResponseStatus(HttpStatus.NOT_FOUND)
-public class StudentIDNotFound extends Exception {
+public class StudentNameNotFound extends Exception {
 
-    public StudentIDNotFound(String message) {
+    public StudentNameNotFound(String message) {
         super(message);
     }
 
-    public StudentIDNotFound() {
+    public StudentNameNotFound() {
         super();
     }
 
-    public StudentIDNotFound(String message, Throwable cause) {
+    public StudentNameNotFound(String message, Throwable cause) {
         super(message, cause);
     }
 
-    public StudentIDNotFound(Throwable cause) {
+    public StudentNameNotFound(Throwable cause) {
         super(cause);
     }
 
-    protected StudentIDNotFound(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
+    protected StudentNameNotFound(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
         super(message, cause, enableSuppression, writableStackTrace);
     }
 }
