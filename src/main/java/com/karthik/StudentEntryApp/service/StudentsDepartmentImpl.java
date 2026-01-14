@@ -20,8 +20,6 @@ public class StudentsDepartmentImpl implements StudentsService{
     @Autowired
     private StudentsRepository studentsRepository;
 
-    Logger logger = Logger.getLogger(StudentsController.class.getName());
-
     @Override
     public StudentsEntity saveStudent(StudentsEntity studentsEntity) {
         return studentsRepository.save(studentsEntity);
@@ -45,10 +43,10 @@ public class StudentsDepartmentImpl implements StudentsService{
 
     @Override
     public List<StudentsEntity> fetchStudentsByName(String name) throws StudentNameNotFound {
-        logger.info("Fetching details for name: " + name);
+        log.info("Fetching details for name: " + name);
         List<StudentsEntity> studentsEntities = studentsRepository.fetchStudentsByName(name);
         if(studentsEntities.isEmpty()){
-            logger.info("No records found for the name: " + name);
+            log.info("No records found for the name: " + name);
             throw new StudentNameNotFound(String.format("Student Name: %s Not Found", name));
         }
         return studentsEntities;
@@ -57,7 +55,7 @@ public class StudentsDepartmentImpl implements StudentsService{
     @Override
     public void deleteStudentById(Long id) throws StudentIDNotFound {
         if(studentsRepository.findById(id).isEmpty()){
-            logger.info("No records found for the ID: " + id);
+            log.info("No records found for the ID: " + id);
             throw new StudentIDNotFound(String.format("Student ID: %s Not Found", id));
         }
         studentsRepository.deleteById(id);
@@ -67,7 +65,7 @@ public class StudentsDepartmentImpl implements StudentsService{
     public StudentsEntity updateStudentById(Long id, StudentsEntity studentsEntityRequest) throws StudentIDNotFound {
         Optional<StudentsEntity> studentsEntity =  studentsRepository.findById(id);
         if(studentsEntity.isEmpty()){
-            logger.info("No records found for the ID: " + id);
+            log.info("No records found for the ID: " + id);
             throw new StudentIDNotFound("Student ID: " + id + " Not Found");
         }
         StudentsEntity studentsEntity1 = studentsEntity.get();
