@@ -9,10 +9,10 @@ import com.karthik.StudentEntryApp.service.StudentsDepartmentImpl;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.logging.Logger;
 
 @Slf4j
 @RestController
@@ -31,6 +31,12 @@ public class StudentsController {
     public List<StudentsEntity> fetchAllStudents() {
         log.info("Received request to fetch all students");
         return studentsService.fetchAllStudents();
+    }
+
+    @RequestMapping(value = "/students/page", method = RequestMethod.GET)
+    public Page<StudentsEntity> fetchAllStudentsWithPagination(@RequestParam int page, @RequestParam int size){
+        log.info("Received request to fetch students with pagination - Page: " + page + ", Size: " + size);
+        return studentsService.fetchStudentsWithPagination(page, size);
     }
 
     @RequestMapping(value = "/students/{id}", method = RequestMethod.GET)

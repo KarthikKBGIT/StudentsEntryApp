@@ -1,6 +1,5 @@
 package com.karthik.StudentEntryApp.service;
 
-import com.karthik.StudentEntryApp.controller.StudentsController;
 import com.karthik.StudentEntryApp.entity.StudentsEntity;
 import com.karthik.StudentEntryApp.error.StudentDepartmentNotFound;
 import com.karthik.StudentEntryApp.error.StudentIDNotFound;
@@ -9,13 +8,14 @@ import com.karthik.StudentEntryApp.error.StudentStateNotFound;
 import com.karthik.StudentEntryApp.repository.StudentsRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
-import java.util.logging.Logger;
 
 @Slf4j
 @Service
@@ -31,6 +31,12 @@ public class StudentsDepartmentImpl implements StudentsService{
     @Override
     public List<StudentsEntity> fetchAllStudents() {
         return studentsRepository.findAll();
+    }
+
+    @Override
+    public Page<StudentsEntity> fetchStudentsWithPagination(int page, int size) {
+        Pageable pageable = PageRequest.of(page, size);
+        return studentsRepository.findAll(pageable);
     }
 
     @Override

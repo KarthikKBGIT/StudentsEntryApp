@@ -5,6 +5,7 @@ import com.karthik.StudentEntryApp.error.StudentDepartmentNotFound;
 import com.karthik.StudentEntryApp.error.StudentIDNotFound;
 import com.karthik.StudentEntryApp.error.StudentNameNotFound;
 import com.karthik.StudentEntryApp.error.StudentStateNotFound;
+import org.springframework.data.domain.Page;
 
 import java.util.List;
 
@@ -13,6 +14,8 @@ public interface StudentsService {
     public StudentsEntity saveStudent(StudentsEntity studentsEntity);
 
     public List<StudentsEntity> fetchAllStudents();
+
+    public Page<StudentsEntity> fetchStudentsWithPagination(int page, int size);
 
     public StudentsEntity fetchStudentById(Long id) throws StudentIDNotFound;
 

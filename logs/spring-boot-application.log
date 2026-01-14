@@ -1806,3 +1806,497 @@ java.lang.NullPointerException: Cannot invoke "String.isEmpty()" because "state"
 2026-01-14 23:12:25 - Received request to save student: StudentsEntity(id=null, name=Karthik K B, department=Maths, state=Karnataka)
 2026-01-14 23:12:28 - Received request to fetch students by state: Karnataka
 2026-01-14 23:12:28 - Fetching details for state: Karnataka
+2026-01-14 23:25:57 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2026-01-14 23:26:02 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2026-01-14 23:26:10 - Received request to save student: StudentsEntity(id=null, name=Karthik K B, department=Maths, state=Karnataka)
+2026-01-14 23:39:32 - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2026-01-14 23:39:32 - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-14 23:39:32 - Graceful shutdown complete
+2026-01-14 23:39:32 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-14 23:39:32 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2026-01-14 23:39:32 - HikariPool-10 - Shutdown initiated...
+2026-01-14 23:39:32 - HikariPool-10 - Shutdown completed.
+2026-01-14 23:39:32 - Starting StudentEntryApplication using Java 21.0.6 with PID 62769 (/Users/karthikkb/Downloads/StudentsEntryApp/target/classes started by karthikkb in /Users/karthikkb/Downloads/StudentsEntryApp)
+2026-01-14 23:39:32 - No active profile set, falling back to 1 default profile: "default"
+2026-01-14 23:39:32 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: I/O failure while processing configuration class [com.karthik.StudentEntryApp.service.StudentsDepartmentImpl]
+2026-01-14 23:39:32 - Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: I/O failure while processing configuration class [com.karthik.StudentEntryApp.service.StudentsDepartmentImpl]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:288) ~[spring-context-7.0.1.jar:7.0.1]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:220) ~[spring-context-7.0.1.jar:7.0.1]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:355) ~[spring-context-7.0.1.jar:7.0.1]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:283) ~[spring-context-7.0.1.jar:7.0.1]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:206) ~[spring-context-7.0.1.jar:7.0.1]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:174) ~[spring-context-7.0.1.jar:7.0.1]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:442) ~[spring-context-7.0.1.jar:7.0.1]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:306) ~[spring-context-7.0.1.jar:7.0.1]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349) ~[spring-context-7.0.1.jar:7.0.1]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118) ~[spring-context-7.0.1.jar:7.0.1]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:784) ~[spring-context-7.0.1.jar:7.0.1]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:602) ~[spring-context-7.0.1.jar:7.0.1]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-web-server-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:765) ~[spring-boot-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:454) ~[spring-boot-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321) ~[spring-boot-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1374) ~[spring-boot-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-4.0.0.jar:4.0.0]
+	at com.karthik.StudentEntryApp.StudentEntryApplication.main(StudentEntryApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52) ~[spring-boot-devtools-4.0.0.jar:4.0.0]
+Caused by: java.io.FileNotFoundException: class path resource [com/karthik/StudentEntryApp/service/StudentsService.class] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:212) ~[spring-core-7.0.1.jar:7.0.1]
+	at org.springframework.core.type.classreading.SimpleMetadataReader.getClassReader(SimpleMetadataReader.java:54) ~[spring-core-7.0.1.jar:7.0.1]
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:48) ~[spring-core-7.0.1.jar:7.0.1]
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:62) ~[spring-core-7.0.1.jar:7.0.1]
+	at org.springframework.core.type.classreading.CachingMetadataReaderFactory.getMetadataReader(CachingMetadataReaderFactory.java:127) ~[spring-core-7.0.1.jar:7.0.1]
+	at org.springframework.core.type.classreading.AbstractMetadataReaderFactory.getMetadataReader(AbstractMetadataReaderFactory.java:62) ~[spring-core-7.0.1.jar:7.0.1]
+	at org.springframework.core.type.classreading.CachingMetadataReaderFactory.getMetadataReader(CachingMetadataReaderFactory.java:40) ~[spring-core-7.0.1.jar:7.0.1]
+	at org.springframework.context.annotation.ConfigurationClassParser.asSourceClass(ConfigurationClassParser.java:728) ~[spring-context-7.0.1.jar:7.0.1]
+	at org.springframework.context.annotation.ConfigurationClassParser$SourceClass.getInterfaces(ConfigurationClassParser.java:1074) ~[spring-context-7.0.1.jar:7.0.1]
+	at org.springframework.context.annotation.ConfigurationClassParser.collectImports(ConfigurationClassParser.java:566) ~[spring-context-7.0.1.jar:7.0.1]
+	at org.springframework.context.annotation.ConfigurationClassParser.getImports(ConfigurationClassParser.java:541) ~[spring-context-7.0.1.jar:7.0.1]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:362) ~[spring-context-7.0.1.jar:7.0.1]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:283) ~[spring-context-7.0.1.jar:7.0.1]
+	... 21 common frames omitted
+2026-01-14 23:39:46 - Starting StudentEntryApplication using Java 21.0.6 with PID 62769 (/Users/karthikkb/Downloads/StudentsEntryApp/target/classes started by karthikkb in /Users/karthikkb/Downloads/StudentsEntryApp)
+2026-01-14 23:39:46 - No active profile set, falling back to 1 default profile: "default"
+2026-01-14 23:39:46 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-14 23:39:46 - Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2026-01-14 23:39:46 - Tomcat initialized with port 8083 (http)
+2026-01-14 23:39:46 - Starting service [Tomcat]
+2026-01-14 23:39:46 - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2026-01-14 23:39:46 - Root WebApplicationContext: initialization completed in 90 ms
+2026-01-14 23:39:46 - HikariPool-11 - Starting...
+2026-01-14 23:39:46 - HikariPool-11 - Added connection conn123: url=jdbc:h2:mem:testdb user=SA
+2026-01-14 23:39:46 - HikariPool-11 - Start completed.
+2026-01-14 23:39:46 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-14 23:39:46 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-14 23:39:46 - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.3.232
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-14 23:39:46 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-14 23:39:46 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-14 23:39:46 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'studentsController' defined in file [/Users/karthikkb/Downloads/StudentsEntryApp/target/classes/com/karthik/StudentEntryApp/controller/StudentsController.class]: Post-processing of merged bean definition failed
+2026-01-14 23:39:46 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-14 23:39:46 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2026-01-14 23:39:46 - HikariPool-11 - Shutdown initiated...
+2026-01-14 23:39:46 - HikariPool-11 - Shutdown completed.
+2026-01-14 23:39:46 - Stopping service [Tomcat]
+2026-01-14 23:39:46 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-01-14 23:39:46 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'studentsController' defined in file [/Users/karthikkb/Downloads/StudentsEntryApp/target/classes/com/karthik/StudentEntryApp/controller/StudentsController.class]: Post-processing of merged bean definition failed
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:580) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1218) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1184) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1121) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:983) ~[spring-context-7.0.1.jar:7.0.1]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:620) ~[spring-context-7.0.1.jar:7.0.1]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-web-server-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:765) ~[spring-boot-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:454) ~[spring-boot-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321) ~[spring-boot-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1374) ~[spring-boot-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-4.0.0.jar:4.0.0]
+	at com.karthik.StudentEntryApp.StudentEntryApplication.main(StudentEntryApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52) ~[spring-boot-devtools-4.0.0.jar:4.0.0]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.karthik.StudentEntryApp.controller.StudentsController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@2188ada9]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:756) ~[spring-core-7.0.1.jar:7.0.1]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:689) ~[spring-core-7.0.1.jar:7.0.1]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.buildPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:430) ~[spring-orm-7.0.1.jar:7.0.1]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:411) ~[spring-orm-7.0.1.jar:7.0.1]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findInjectionMetadata(PersistenceAnnotationBeanPostProcessor.java:370) ~[spring-orm-7.0.1.jar:7.0.1]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(PersistenceAnnotationBeanPostProcessor.java:347) ~[spring-orm-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1114) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:577) ~[spring-beans-7.0.1.jar:7.0.1]
+	... 20 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/karthik/StudentEntryApp/service/StudentsDepartmentImpl
+	at java.base/java.lang.Class.getDeclaredFields0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredFields(Class.java:3473) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredFields(Class.java:2542) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:751) ~[spring-core-7.0.1.jar:7.0.1]
+	... 27 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.karthik.StudentEntryApp.service.StudentsDepartmentImpl
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:534) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:513) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:123) ~[spring-boot-devtools-4.0.0.jar:4.0.0]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[na:na]
+	... 31 common frames omitted
+2026-01-14 23:40:40 - Starting StudentEntryApplication using Java 21.0.6 with PID 62769 (/Users/karthikkb/Downloads/StudentsEntryApp/target/classes started by karthikkb in /Users/karthikkb/Downloads/StudentsEntryApp)
+2026-01-14 23:40:40 - No active profile set, falling back to 1 default profile: "default"
+2026-01-14 23:40:40 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-14 23:40:40 - Finished Spring Data repository scanning in 1 ms. Found 1 JPA repository interface.
+2026-01-14 23:40:40 - Tomcat initialized with port 8083 (http)
+2026-01-14 23:40:40 - Starting service [Tomcat]
+2026-01-14 23:40:40 - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2026-01-14 23:40:40 - Root WebApplicationContext: initialization completed in 51 ms
+2026-01-14 23:40:40 - HikariPool-12 - Starting...
+2026-01-14 23:40:40 - HikariPool-12 - Added connection conn124: url=jdbc:h2:mem:testdb user=SA
+2026-01-14 23:40:40 - HikariPool-12 - Start completed.
+2026-01-14 23:40:40 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-14 23:40:40 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-14 23:40:40 - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.3.232
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-14 23:40:40 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-14 23:40:40 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-14 23:40:40 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'studentsController' defined in file [/Users/karthikkb/Downloads/StudentsEntryApp/target/classes/com/karthik/StudentEntryApp/controller/StudentsController.class]: Post-processing of merged bean definition failed
+2026-01-14 23:40:40 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-14 23:40:40 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2026-01-14 23:40:40 - HikariPool-12 - Shutdown initiated...
+2026-01-14 23:40:40 - HikariPool-12 - Shutdown completed.
+2026-01-14 23:40:40 - Stopping service [Tomcat]
+2026-01-14 23:40:40 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-01-14 23:40:40 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'studentsController' defined in file [/Users/karthikkb/Downloads/StudentsEntryApp/target/classes/com/karthik/StudentEntryApp/controller/StudentsController.class]: Post-processing of merged bean definition failed
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:580) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1218) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1184) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1121) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:983) ~[spring-context-7.0.1.jar:7.0.1]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:620) ~[spring-context-7.0.1.jar:7.0.1]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-web-server-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:765) ~[spring-boot-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:454) ~[spring-boot-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321) ~[spring-boot-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1374) ~[spring-boot-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-4.0.0.jar:4.0.0]
+	at com.karthik.StudentEntryApp.StudentEntryApplication.main(StudentEntryApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52) ~[spring-boot-devtools-4.0.0.jar:4.0.0]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.karthik.StudentEntryApp.controller.StudentsController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@23ca29b6]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:756) ~[spring-core-7.0.1.jar:7.0.1]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:689) ~[spring-core-7.0.1.jar:7.0.1]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.buildPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:430) ~[spring-orm-7.0.1.jar:7.0.1]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:411) ~[spring-orm-7.0.1.jar:7.0.1]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findInjectionMetadata(PersistenceAnnotationBeanPostProcessor.java:370) ~[spring-orm-7.0.1.jar:7.0.1]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(PersistenceAnnotationBeanPostProcessor.java:347) ~[spring-orm-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1114) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:577) ~[spring-beans-7.0.1.jar:7.0.1]
+	... 20 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/karthik/StudentEntryApp/service/StudentsDepartmentImpl
+	at java.base/java.lang.Class.getDeclaredFields0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredFields(Class.java:3473) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredFields(Class.java:2542) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:751) ~[spring-core-7.0.1.jar:7.0.1]
+	... 27 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.karthik.StudentEntryApp.service.StudentsDepartmentImpl
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:534) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:513) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:123) ~[spring-boot-devtools-4.0.0.jar:4.0.0]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[na:na]
+	... 31 common frames omitted
+2026-01-14 23:42:42 - Starting StudentEntryApplication using Java 21.0.6 with PID 62769 (/Users/karthikkb/Downloads/StudentsEntryApp/target/classes started by karthikkb in /Users/karthikkb/Downloads/StudentsEntryApp)
+2026-01-14 23:42:42 - No active profile set, falling back to 1 default profile: "default"
+2026-01-14 23:42:42 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-14 23:42:42 - Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interface.
+2026-01-14 23:42:42 - Tomcat initialized with port 8083 (http)
+2026-01-14 23:42:42 - Starting service [Tomcat]
+2026-01-14 23:42:42 - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2026-01-14 23:42:42 - Root WebApplicationContext: initialization completed in 48 ms
+2026-01-14 23:42:42 - HikariPool-13 - Starting...
+2026-01-14 23:42:42 - HikariPool-13 - Added connection conn125: url=jdbc:h2:mem:testdb user=SA
+2026-01-14 23:42:42 - HikariPool-13 - Start completed.
+2026-01-14 23:42:42 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-14 23:42:42 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-14 23:42:42 - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.3.232
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-14 23:42:42 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-14 23:42:42 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-14 23:42:42 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-14 23:42:42 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2026-01-14 23:42:42 - Tomcat started on port 8083 (http) with context path '/'
+2026-01-14 23:42:42 - Started StudentEntryApplication in 0.118 seconds (process running for 6171.818)
+2026-01-14 23:42:42 - Condition evaluation unchanged
+2026-01-14 23:45:03 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-01-14 23:45:03 - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-14 23:45:03 - Graceful shutdown complete
+2026-01-14 23:45:03 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-14 23:45:03 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2026-01-14 23:45:03 - HikariPool-13 - Shutdown initiated...
+2026-01-14 23:45:03 - HikariPool-13 - Shutdown completed.
+2026-01-14 23:45:03 - Starting StudentEntryApplication using Java 21.0.6 with PID 62769 (/Users/karthikkb/Downloads/StudentsEntryApp/target/classes started by karthikkb in /Users/karthikkb/Downloads/StudentsEntryApp)
+2026-01-14 23:45:03 - No active profile set, falling back to 1 default profile: "default"
+2026-01-14 23:45:03 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-14 23:45:03 - Finished Spring Data repository scanning in 1 ms. Found 1 JPA repository interface.
+2026-01-14 23:45:03 - Tomcat initialized with port 8083 (http)
+2026-01-14 23:45:03 - Starting service [Tomcat]
+2026-01-14 23:45:03 - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2026-01-14 23:45:03 - Root WebApplicationContext: initialization completed in 41 ms
+2026-01-14 23:45:03 - HikariPool-14 - Starting...
+2026-01-14 23:45:03 - HikariPool-14 - Added connection conn135: url=jdbc:h2:mem:testdb user=SA
+2026-01-14 23:45:03 - HikariPool-14 - Start completed.
+2026-01-14 23:45:03 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-14 23:45:03 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-14 23:45:03 - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.3.232
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-14 23:45:03 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-14 23:45:03 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-14 23:45:03 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-14 23:45:03 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2026-01-14 23:45:03 - Tomcat started on port 8083 (http) with context path '/'
+2026-01-14 23:45:03 - Started StudentEntryApplication in 0.104 seconds (process running for 6312.799)
+2026-01-14 23:45:03 - Condition evaluation unchanged
+2026-01-14 23:46:17 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-14 23:46:17 - Initializing Servlet 'dispatcherServlet'
+2026-01-14 23:46:17 - Completed initialization in 1 ms
+2026-01-14 23:46:17 - Received request to save student: StudentsEntity(id=null, name=Karthik K B, department=Maths, state=Karnataka)
+2026-01-14 23:46:18 - Received request to save student: StudentsEntity(id=null, name=Karthik K B, department=Maths, state=Karnataka)
+2026-01-14 23:46:19 - Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2026-01-14 23:46:19 - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-14 23:46:19 - Graceful shutdown complete
+2026-01-14 23:46:19 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-14 23:46:19 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2026-01-14 23:46:19 - HikariPool-14 - Shutdown initiated...
+2026-01-14 23:46:19 - HikariPool-14 - Shutdown completed.
+2026-01-14 23:46:19 - Starting StudentEntryApplication using Java 21.0.6 with PID 62769 (/Users/karthikkb/Downloads/StudentsEntryApp/target/classes started by karthikkb in /Users/karthikkb/Downloads/StudentsEntryApp)
+2026-01-14 23:46:19 - No active profile set, falling back to 1 default profile: "default"
+2026-01-14 23:46:20 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-14 23:46:20 - Finished Spring Data repository scanning in 1 ms. Found 1 JPA repository interface.
+2026-01-14 23:46:20 - Tomcat initialized with port 8083 (http)
+2026-01-14 23:46:20 - Starting service [Tomcat]
+2026-01-14 23:46:20 - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2026-01-14 23:46:20 - Root WebApplicationContext: initialization completed in 43 ms
+2026-01-14 23:46:20 - HikariPool-15 - Starting...
+2026-01-14 23:46:20 - HikariPool-15 - Added connection conn145: url=jdbc:h2:mem:testdb user=SA
+2026-01-14 23:46:20 - HikariPool-15 - Start completed.
+2026-01-14 23:46:20 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-14 23:46:20 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-14 23:46:20 - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.3.232
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-14 23:46:20 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-14 23:46:20 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-14 23:46:20 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-14 23:46:20 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/webmvc/autoconfigure/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'studentsController' method 
+com.karthik.StudentEntryApp.controller.StudentsController#fetchAllStudentsWithPagination(int, int)
+to {GET [/students]}: There is already 'studentsController' bean method
+com.karthik.StudentEntryApp.controller.StudentsController#fetchAllStudents() mapped.
+2026-01-14 23:46:20 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-14 23:46:20 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2026-01-14 23:46:20 - HikariPool-15 - Shutdown initiated...
+2026-01-14 23:46:20 - HikariPool-15 - Shutdown completed.
+2026-01-14 23:46:20 - Stopping service [Tomcat]
+2026-01-14 23:46:20 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-01-14 23:46:20 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/webmvc/autoconfigure/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'studentsController' method 
+com.karthik.StudentEntryApp.controller.StudentsController#fetchAllStudentsWithPagination(int, int)
+to {GET [/students]}: There is already 'studentsController' bean method
+com.karthik.StudentEntryApp.controller.StudentsController#fetchAllStudents() mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1817) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1218) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1184) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1121) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:983) ~[spring-context-7.0.1.jar:7.0.1]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:620) ~[spring-context-7.0.1.jar:7.0.1]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-web-server-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:765) ~[spring-boot-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:454) ~[spring-boot-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321) ~[spring-boot-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1374) ~[spring-boot-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-4.0.0.jar:4.0.0]
+	at com.karthik.StudentEntryApp.StudentEntryApplication.main(StudentEntryApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52) ~[spring-boot-devtools-4.0.0.jar:4.0.0]
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'studentsController' method 
+com.karthik.StudentEntryApp.controller.StudentsController#fetchAllStudentsWithPagination(int, int)
+to {GET [/students]}: There is already 'studentsController' bean method
+com.karthik.StudentEntryApp.controller.StudentsController#fetchAllStudents() mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:645) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:606) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:327) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:459) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:80) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$1(AbstractHandlerMethodMapping.java:294) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:986) ~[na:na]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:292) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:261) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:220) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:208) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:158) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1864) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1813) ~[spring-beans-7.0.1.jar:7.0.1]
+	... 21 common frames omitted
+2026-01-14 23:47:16 - Starting StudentEntryApplication using Java 21.0.6 with PID 62769 (/Users/karthikkb/Downloads/StudentsEntryApp/target/classes started by karthikkb in /Users/karthikkb/Downloads/StudentsEntryApp)
+2026-01-14 23:47:16 - No active profile set, falling back to 1 default profile: "default"
+2026-01-14 23:47:17 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-14 23:47:17 - Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interface.
+2026-01-14 23:47:17 - Tomcat initialized with port 8083 (http)
+2026-01-14 23:47:17 - Starting service [Tomcat]
+2026-01-14 23:47:17 - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2026-01-14 23:47:17 - Root WebApplicationContext: initialization completed in 60 ms
+2026-01-14 23:47:17 - HikariPool-16 - Starting...
+2026-01-14 23:47:17 - HikariPool-16 - Added connection conn146: url=jdbc:h2:mem:testdb user=SA
+2026-01-14 23:47:17 - HikariPool-16 - Start completed.
+2026-01-14 23:47:17 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-14 23:47:17 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-14 23:47:17 - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.3.232
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-14 23:47:17 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-14 23:47:17 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-14 23:47:17 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-14 23:47:17 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2026-01-14 23:47:17 - Tomcat started on port 8083 (http) with context path '/'
+2026-01-14 23:47:17 - Started StudentEntryApplication in 0.133 seconds (process running for 6446.412)
+2026-01-14 23:47:17 - Condition evaluation unchanged
+2026-01-14 23:47:24 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-14 23:47:24 - Initializing Servlet 'dispatcherServlet'
+2026-01-14 23:47:24 - Completed initialization in 1 ms
+2026-01-14 23:47:24 - Received request to fetch all students
+2026-01-14 23:47:45 - Received request to fetch students with pagination - Page: 1, Size: 1
+2026-01-14 23:47:45 - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2026-01-14 23:47:49 - Received request to save student: StudentsEntity(id=null, name=Karthik K B, department=Maths, state=Karnataka)
+2026-01-14 23:47:51 - Received request to save student: StudentsEntity(id=null, name=Karthik K B, department=Maths, state=Karnataka)
+2026-01-14 23:47:52 - Received request to save student: StudentsEntity(id=null, name=Karthik K B, department=Maths, state=Karnataka)
+2026-01-14 23:47:53 - Received request to save student: StudentsEntity(id=null, name=Karthik K B, department=Maths, state=Karnataka)
+2026-01-14 23:47:53 - Received request to save student: StudentsEntity(id=null, name=Karthik K B, department=Maths, state=Karnataka)
+2026-01-14 23:47:54 - Received request to save student: StudentsEntity(id=null, name=Karthik K B, department=Maths, state=Karnataka)
+2026-01-14 23:47:54 - Received request to save student: StudentsEntity(id=null, name=Karthik K B, department=Maths, state=Karnataka)
+2026-01-14 23:47:55 - Received request to save student: StudentsEntity(id=null, name=Karthik K B, department=Maths, state=Karnataka)
+2026-01-14 23:47:55 - Received request to save student: StudentsEntity(id=null, name=Karthik K B, department=Maths, state=Karnataka)
+2026-01-14 23:47:56 - Received request to save student: StudentsEntity(id=null, name=Karthik K B, department=Maths, state=Karnataka)
+2026-01-14 23:47:56 - Received request to save student: StudentsEntity(id=null, name=Karthik K B, department=Maths, state=Karnataka)
+2026-01-14 23:47:57 - Received request to save student: StudentsEntity(id=null, name=Karthik K B, department=Maths, state=Karnataka)
+2026-01-14 23:47:57 - Received request to save student: StudentsEntity(id=null, name=Karthik K B, department=Maths, state=Karnataka)
+2026-01-14 23:47:57 - Received request to save student: StudentsEntity(id=null, name=Karthik K B, department=Maths, state=Karnataka)
+2026-01-14 23:47:58 - Received request to save student: StudentsEntity(id=null, name=Karthik K B, department=Maths, state=Karnataka)
+2026-01-14 23:47:58 - Received request to save student: StudentsEntity(id=null, name=Karthik K B, department=Maths, state=Karnataka)
+2026-01-14 23:47:59 - Received request to save student: StudentsEntity(id=null, name=Karthik K B, department=Maths, state=Karnataka)
+2026-01-14 23:47:59 - Received request to save student: StudentsEntity(id=null, name=Karthik K B, department=Maths, state=Karnataka)
+2026-01-14 23:48:00 - Received request to save student: StudentsEntity(id=null, name=Karthik K B, department=Maths, state=Karnataka)
+2026-01-14 23:48:01 - Received request to save student: StudentsEntity(id=null, name=Karthik K B, department=Maths, state=Karnataka)
+2026-01-14 23:48:04 - Received request to fetch students with pagination - Page: 1, Size: 1
+2026-01-14 23:48:08 - Received request to fetch students with pagination - Page: 1, Size: 10
+2026-01-14 23:48:12 - Received request to fetch students with pagination - Page: 0, Size: 10
+2026-01-14 23:59:08 - Restarting due to 29 class path changes (14 additions, 0 deletions, 15 modifications)
+2026-01-14 23:59:08 - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-14 23:59:08 - Graceful shutdown complete
+2026-01-14 23:59:08 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-14 23:59:08 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2026-01-14 23:59:08 - HikariPool-16 - Shutdown initiated...
+2026-01-14 23:59:08 - HikariPool-16 - Shutdown completed.
+2026-01-14 23:59:08 - Starting StudentEntryApplication using Java 21.0.6 with PID 62769 (/Users/karthikkb/Downloads/StudentsEntryApp/target/classes started by karthikkb in /Users/karthikkb/Downloads/StudentsEntryApp)
+2026-01-14 23:59:08 - No active profile set, falling back to 1 default profile: "default"
+2026-01-14 23:59:08 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-14 23:59:08 - Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interface.
+2026-01-14 23:59:08 - Tomcat initialized with port 8083 (http)
+2026-01-14 23:59:08 - Starting service [Tomcat]
+2026-01-14 23:59:08 - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2026-01-14 23:59:08 - Root WebApplicationContext: initialization completed in 49 ms
+2026-01-14 23:59:08 - HikariPool-17 - Starting...
+2026-01-14 23:59:08 - HikariPool-17 - Added connection conn156: url=jdbc:h2:mem:testdb user=SA
+2026-01-14 23:59:08 - HikariPool-17 - Start completed.
+2026-01-14 23:59:08 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-14 23:59:08 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-14 23:59:08 - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.3.232
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-14 23:59:08 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-14 23:59:08 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-14 23:59:08 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-14 23:59:08 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2026-01-14 23:59:08 - Tomcat started on port 8083 (http) with context path '/'
+2026-01-14 23:59:08 - Started StudentEntryApplication in 0.11 seconds (process running for 7158.218)
+2026-01-14 23:59:08 - Condition evaluation unchanged
