@@ -2,6 +2,7 @@ package com.karthik.StudentEntryApp.service;
 
 import com.karthik.StudentEntryApp.controller.StudentsController;
 import com.karthik.StudentEntryApp.entity.StudentsEntity;
+import com.karthik.StudentEntryApp.error.StudentDepartmentNotFound;
 import com.karthik.StudentEntryApp.error.StudentIDNotFound;
 import com.karthik.StudentEntryApp.error.StudentNameNotFound;
 import com.karthik.StudentEntryApp.repository.StudentsRepository;
@@ -47,7 +48,23 @@ public class StudentsDepartmentImpl implements StudentsService{
         List<StudentsEntity> studentsEntities = studentsRepository.fetchStudentsByName(name);
         if(studentsEntities.isEmpty()){
             log.info("No records found for the name: " + name);
+            if(name.isEmpty()){
+                throw new StudentNameNotFound("Student Name on header is empty");
+            }
             throw new StudentNameNotFound(String.format("Student Name: %s Not Found", name));
+        }
+        return studentsEntities;
+    }
+
+    public List<StudentsEntity> fetchStudentsByDepartment(String departmentName) throws StudentDepartmentNotFound {
+        log.info("Fetching details for department: " + departmentName);
+        List<StudentsEntity> studentsEntities = studentsRepository.fetchStudentsByDepartment(departmentName);
+        if(studentsEntities.isEmpty()){
+            log.debug("No records found for the department: " + departmentName);
+            if(departmentName.isEmpty()){
+                throw new StudentDepartmentNotFound("Student Department name on header is empty");
+            }
+            throw new StudentDepartmentNotFound("Student Department: " + departmentName + " Not Found");
         }
         return studentsEntities;
     }

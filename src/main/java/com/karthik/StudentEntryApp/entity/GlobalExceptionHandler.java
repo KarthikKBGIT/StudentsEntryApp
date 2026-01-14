@@ -1,5 +1,6 @@
 package com.karthik.StudentEntryApp.entity;
 
+import com.karthik.StudentEntryApp.error.StudentDepartmentNotFound;
 import com.karthik.StudentEntryApp.error.StudentIDNotFound;
 import com.karthik.StudentEntryApp.error.StudentNameNotFound;
 import org.springframework.http.HttpStatus;
@@ -22,6 +23,12 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(StudentNameNotFound.class)
     public ResponseEntity<ErrorMessage> studentNameNotFoundExceptionHandler(Exception e){
+        ErrorMessage message = new ErrorMessage(HttpStatus.NOT_FOUND.value(), e.getMessage());
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(message);
+    }
+
+    @ExceptionHandler(StudentDepartmentNotFound.class)
+    public ResponseEntity<ErrorMessage> studentDepartmentNotFoundExceptionHandler(Exception e){
         ErrorMessage message = new ErrorMessage(HttpStatus.NOT_FOUND.value(), e.getMessage());
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body(message);
     }

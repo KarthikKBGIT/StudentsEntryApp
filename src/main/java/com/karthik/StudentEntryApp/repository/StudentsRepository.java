@@ -11,7 +11,10 @@ import java.util.List;
 @Repository
 public interface StudentsRepository extends JpaRepository<StudentsEntity, Long> {
 
-    @Query(value = "select * from STUDENTS_ENTITY where name = :name", nativeQuery = true)
+    @Query(value = "select * from STUDENTS_ENTITY where name = :name order by id", nativeQuery = true)
     public List<StudentsEntity> fetchStudentsByName(@Param("name") String name);
+
+    @Query(value = "select s from StudentsEntity s where s.department = :department order by s.id")
+    public List<StudentsEntity> fetchStudentsByDepartment(@Param("department") String department);
 
 }
