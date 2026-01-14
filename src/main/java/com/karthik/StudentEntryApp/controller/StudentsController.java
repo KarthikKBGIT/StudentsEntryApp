@@ -4,6 +4,7 @@ import com.karthik.StudentEntryApp.entity.StudentsEntity;
 import com.karthik.StudentEntryApp.error.StudentDepartmentNotFound;
 import com.karthik.StudentEntryApp.error.StudentIDNotFound;
 import com.karthik.StudentEntryApp.error.StudentNameNotFound;
+import com.karthik.StudentEntryApp.error.StudentStateNotFound;
 import com.karthik.StudentEntryApp.service.StudentsDepartmentImpl;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
@@ -48,6 +49,12 @@ public class StudentsController {
     public List<StudentsEntity> fetchStudentsByDepartment(@PathVariable("department") String department) throws StudentDepartmentNotFound {
         log.info("Received request to fetch students by department: " + department);
         return studentsService.fetchStudentsByDepartment(department);
+    }
+
+    @RequestMapping(value = "/students/state/('{state}')", method = RequestMethod.GET)
+    public List<StudentsEntity> fetchStudentsByState(@PathVariable("state") String state) throws StudentStateNotFound {
+        log.info("Received request to fetch students by state: " + state);
+        return studentsService.fetchStudentsByState(state);
     }
 
     @RequestMapping(value = "/students/{id}", method = RequestMethod.DELETE)

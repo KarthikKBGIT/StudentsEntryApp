@@ -17,4 +17,7 @@ public interface StudentsRepository extends JpaRepository<StudentsEntity, Long> 
     @Query(value = "select s from StudentsEntity s where s.department = :department order by s.id")
     public List<StudentsEntity> fetchStudentsByDepartment(@Param("department") String department);
 
+    @Query(value = "select * from STUDENTS_ENTITY where state = :state order by id", nativeQuery = true)
+    public List<StudentsEntity> fetchStudentsByState(@Param("state") String state);
+
 }
