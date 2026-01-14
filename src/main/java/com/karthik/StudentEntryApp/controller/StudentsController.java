@@ -46,7 +46,7 @@ public class StudentsController {
     }
 
     @RequestMapping(value = "/students/{id}", method = RequestMethod.DELETE)
-    public String deleteStudentById(@PathVariable("id") Long id){
+    public String deleteStudentById(@PathVariable("id") Long id) throws StudentIDNotFound {
         logger.info("Received request to delete student by ID: " + id);
         studentsService.deleteStudentById(id);
         return "Student with ID: " + id + " has been deleted successfully.";

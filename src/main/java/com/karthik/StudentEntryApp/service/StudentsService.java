@@ -16,7 +16,7 @@ public interface StudentsService {
 
     public List<StudentsEntity> fetchStudentsByName(String name) throws StudentNameNotFound;
 
-    public void deleteStudentById(Long id);
+    public void deleteStudentById(Long id) throws StudentIDNotFound;
 
     public StudentsEntity updateStudentById(Long id, StudentsEntity studentsEntity);
 
