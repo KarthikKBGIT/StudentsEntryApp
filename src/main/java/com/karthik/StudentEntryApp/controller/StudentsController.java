@@ -5,7 +5,7 @@ import com.karthik.StudentEntryApp.error.StudentDepartmentNotFound;
 import com.karthik.StudentEntryApp.error.StudentIDNotFound;
 import com.karthik.StudentEntryApp.error.StudentNameNotFound;
 import com.karthik.StudentEntryApp.error.StudentStateNotFound;
-import com.karthik.StudentEntryApp.service.StudentsDepartmentImpl;
+import com.karthik.StudentEntryApp.service.StudentsDepartmentService;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +19,7 @@ import java.util.List;
 public class StudentsController {
 
     @Autowired
-    StudentsDepartmentImpl studentsService;
+    StudentsDepartmentService studentsService;
 
     @RequestMapping(value = "/students", method = RequestMethod.POST)
     public StudentsEntity saveStudent(@Valid @RequestBody StudentsEntity studentsEntity) {

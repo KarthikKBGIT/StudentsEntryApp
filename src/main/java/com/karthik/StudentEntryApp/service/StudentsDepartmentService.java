@@ -19,7 +19,7 @@ import java.util.Optional;
 
 @Slf4j
 @Service
-public class StudentsDepartmentImpl implements StudentsService{
+public class StudentsDepartmentService implements StudentsService{
     @Autowired
     private StudentsRepository studentsRepository;
 
