@@ -6,10 +6,12 @@ import com.karthik.StudentEntryApp.error.StudentIDNotFound;
 import com.karthik.StudentEntryApp.error.StudentNameNotFound;
 import com.karthik.StudentEntryApp.error.StudentStateNotFound;
 import com.karthik.StudentEntryApp.service.StudentsDepartmentService;
+import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.security.web.csrf.CsrfToken;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -75,5 +77,11 @@ public class StudentsController {
                                             @RequestBody StudentsEntity studentsEntity) throws StudentIDNotFound {
         log.info("Received request to update student by ID: " + id + " with data: " + studentsEntity);
         return studentsService.updateStudentById(id, studentsEntity);
+    }
+
+    //This is method is only for
+    @RequestMapping(value ="/csrf-token", method = RequestMethod.GET)
+    public CsrfToken getCsrfToken(HttpServletRequest httpServletRequest) {
+        return (CsrfToken) httpServletRequest.getAttribute("_csrf");
     }
 }
