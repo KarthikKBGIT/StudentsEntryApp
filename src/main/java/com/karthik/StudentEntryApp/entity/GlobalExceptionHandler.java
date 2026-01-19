@@ -1,9 +1,6 @@
 package com.karthik.StudentEntryApp.entity;
 
-import com.karthik.StudentEntryApp.error.StudentDepartmentNotFound;
-import com.karthik.StudentEntryApp.error.StudentIDNotFound;
-import com.karthik.StudentEntryApp.error.StudentNameNotFound;
-import com.karthik.StudentEntryApp.error.StudentStateNotFound;
+import com.karthik.StudentEntryApp.error.*;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.ErrorResponse;
@@ -46,6 +43,18 @@ public class GlobalExceptionHandler {
                 e.getBindingResult()
                 .getFieldErrors().stream().map((error) -> error.getDefaultMessage()).collect(Collectors.joining(",")));
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(message);
+    }
+
+    @ExceptionHandler(UsernameAlreadyExists.class)
+    public ResponseEntity<ErrorMessage> usernameAlreadyExistsExceptionHandler(Exception e){
+        ErrorMessage message = new ErrorMessage(HttpStatus.CONFLICT.value(), e.getMessage());
+        return ResponseEntity.status(HttpStatus.CONFLICT).body(message);
+    }
+
+    @ExceptionHandler(EmailAlreadyExists.class)
+    public ResponseEntity<ErrorMessage> emailAlreadyExistsExceptionHandler(Exception e){
+        ErrorMessage message = new ErrorMessage(HttpStatus.NO_CONTENT.value(), e.getMessage());
+        return ResponseEntity.status(HttpStatus.CONFLICT).body(message);
     }
 
 }
