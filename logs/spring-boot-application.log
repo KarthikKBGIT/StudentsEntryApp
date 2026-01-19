@@ -2043,3 +2043,1056 @@ Caused by: java.lang.IllegalArgumentException: Unrecognized 'hibernate.hbm2ddl.a
 2026-01-19 19:31:42 - Received request to save student: StudentsEntity(id=null, name=Karthik K B, department=Maths, state=Karnataka)
 2026-01-19 19:33:24 - Received request to save student: StudentsEntity(id=null, name=Karthik K B, department=Maths, state=Karnataka)
 2026-01-19 19:33:25 - Received request to save student: StudentsEntity(id=null, name=Karthik K B, department=Maths, state=Karnataka)
+2026-01-19 20:06:18 - Received request to save student: StudentsEntity(id=null, name=Karthik K B, department=Maths, state=Karnataka)
+2026-01-19 20:06:19 - Received request to save student: StudentsEntity(id=null, name=Karthik K B, department=Maths, state=Karnataka)
+2026-01-19 20:06:20 - Received request to save student: StudentsEntity(id=null, name=Karthik K B, department=Maths, state=Karnataka)
+2026-01-19 20:06:33 - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-19 20:06:33 - Graceful shutdown complete
+2026-01-19 20:06:33 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19 20:06:33 - HikariPool-1 - Shutdown initiated...
+2026-01-19 20:06:33 - HikariPool-1 - Shutdown completed.
+2026-01-19 20:06:35 - Starting StudentEntryApplication using Java 21.0.6 with PID 45189 (/Users/karthikkb/Downloads/StudentsEntryApp/target/classes started by karthikkb in /Users/karthikkb/Downloads/StudentsEntryApp)
+2026-01-19 20:06:35 - No active profile set, falling back to 1 default profile: "default"
+2026-01-19 20:06:35 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-01-19 20:06:35 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-01-19 20:06:36 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-19 20:06:36 - Finished Spring Data repository scanning in 14 ms. Found 1 JPA repository interface.
+2026-01-19 20:06:36 - Tomcat initialized with port 8083 (http)
+2026-01-19 20:06:36 - Starting service [Tomcat]
+2026-01-19 20:06:36 - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2026-01-19 20:06:36 - Root WebApplicationContext: initialization completed in 547 ms
+2026-01-19 20:06:36 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-19 20:06:36 - HHH000412: Hibernate ORM core version 7.1.8.Final
+2026-01-19 20:06:36 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-19 20:06:36 - HikariPool-1 - Starting...
+2026-01-19 20:06:37 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@67815f3e
+2026-01-19 20:06:37 - HikariPool-1 - Start completed.
+2026-01-19 20:06:37 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-19 20:06:37 - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://db.cjvlwkhpokykjpmxpizw.supabase.co:5432/postgres?sslmode=require]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.6
+	Default catalog/schema: postgres/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-19 20:06:37 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-19 20:06:37 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19 20:06:37 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-19 20:06:38 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-19 20:06:38 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-01-19 20:06:38 - Tomcat started on port 8083 (http) with context path '/'
+2026-01-19 20:06:38 - Started StudentEntryApplication in 2.973 seconds (process running for 3.195)
+2026-01-19 20:08:39 - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@25c0afd (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2026-01-19 20:08:49 - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@29dd893f (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2026-01-19 20:08:59 - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@4c2896c8 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2026-01-19 20:09:09 - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@67815f3e (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2026-01-19 20:09:19 - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@7105a949 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2026-01-19 20:09:29 - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@224055f3 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2026-01-19 20:09:39 - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@6f6dd53e (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2026-01-19 20:09:39 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m32s106ms).
+2026-01-19 20:18:12 - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@292cc4e1 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2026-01-19 20:18:16 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m37s482ms).
+2026-01-19 20:45:45 - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@7ef23727 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2026-01-19 20:45:55 - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@37618dcf (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2026-01-19 20:46:05 - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@701850b9 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2026-01-19 20:46:15 - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@4de23dd1 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2026-01-19 21:00:06 - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@35875e (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2026-01-19 21:09:30 - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@1c3af841 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2026-01-19 21:09:52 - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@56c4c3eb (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2026-01-19 21:09:52 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=44m35s172ms).
+2026-01-19 21:10:02 - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@48c2750f (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2026-01-19 21:11:32 - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@53ef250b (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2026-01-19 21:11:42 - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@30b99123 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2026-01-19 21:11:42 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m50s297ms).
+2026-01-19 21:12:42 - HikariPool-1 - Pool is empty, failed to create/setup connection (2a0c8687-1fff-432b-88c8-5450ca31cc82)
+org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:385)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:57)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:279)
+	at org.postgresql.Driver.makeConnection(Driver.java:448)
+	at org.postgresql.Driver.connect(Driver.java:298)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:144)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:373)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:210)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:488)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:752)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:731)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.net.NoRouteToHostException: No route to host
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:589)
+	at java.base/sun.nio.ch.Net.connect(Net.java:578)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:261)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:122)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:146)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:289)
+	... 14 common frames omitted
+2026-01-19 21:13:47 - HikariPool-1 - Pool is empty, failed to create/setup connection (be8a7be8-a0a6-432f-b309-fe7732f3f41b)
+org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:385)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:57)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:279)
+	at org.postgresql.Driver.makeConnection(Driver.java:448)
+	at org.postgresql.Driver.connect(Driver.java:298)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:144)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:373)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:210)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:488)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:752)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:731)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.net.NoRouteToHostException: No route to host
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:589)
+	at java.base/sun.nio.ch.Net.connect(Net.java:578)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:261)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:122)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:146)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:289)
+	... 14 common frames omitted
+2026-01-19 21:13:57 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m15s307ms).
+2026-01-19 21:51:31 - HikariPool-1 - Pool is empty, failed to create/setup connection (ac292b2a-895a-4c36-8081-27c917b6760d)
+org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:385)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:57)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:279)
+	at org.postgresql.Driver.makeConnection(Driver.java:448)
+	at org.postgresql.Driver.connect(Driver.java:298)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:144)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:373)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:210)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:488)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:752)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:731)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.net.NoRouteToHostException: No route to host
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:589)
+	at java.base/sun.nio.ch.Net.connect(Net.java:578)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:261)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:122)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:146)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:289)
+	... 14 common frames omitted
+2026-01-19 21:51:31 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=37m34s217ms).
+2026-01-19 21:52:37 - HikariPool-1 - Pool is empty, failed to create/setup connection (07974838-a533-463a-8d88-09fcb33e6724)
+org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:385)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:57)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:279)
+	at org.postgresql.Driver.makeConnection(Driver.java:448)
+	at org.postgresql.Driver.connect(Driver.java:298)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:144)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:373)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:210)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:488)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:752)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:731)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.net.NoRouteToHostException: No route to host
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:589)
+	at java.base/sun.nio.ch.Net.connect(Net.java:578)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:261)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:122)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:146)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:289)
+	... 14 common frames omitted
+2026-01-19 21:53:34 - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-19 21:53:34 - Graceful shutdown complete
+2026-01-19 21:53:34 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19 21:53:34 - HikariPool-1 - Shutdown initiated...
+2026-01-19 21:53:35 - HikariPool-1 - Shutdown completed.
+2026-01-19 21:53:36 - Starting StudentEntryApplication using Java 21.0.6 with PID 47029 (/Users/karthikkb/Downloads/StudentsEntryApp/target/classes started by karthikkb in /Users/karthikkb/Downloads/StudentsEntryApp)
+2026-01-19 21:53:36 - No active profile set, falling back to 1 default profile: "default"
+2026-01-19 21:53:36 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-01-19 21:53:36 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-01-19 21:53:37 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-19 21:53:37 - Finished Spring Data repository scanning in 17 ms. Found 1 JPA repository interface.
+2026-01-19 21:53:37 - Tomcat initialized with port 8083 (http)
+2026-01-19 21:53:37 - Starting service [Tomcat]
+2026-01-19 21:53:37 - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2026-01-19 21:53:37 - Root WebApplicationContext: initialization completed in 662 ms
+2026-01-19 21:53:37 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-19 21:53:37 - HHH000412: Hibernate ORM core version 7.1.8.Final
+2026-01-19 21:53:37 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-19 21:53:37 - HikariPool-1 - Starting...
+2026-01-19 21:53:38 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@10f3179a
+2026-01-19 21:53:38 - HikariPool-1 - Start completed.
+2026-01-19 21:53:39 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-19 21:53:39 - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://db.cjvlwkhpokykjpmxpizw.supabase.co:5432/postgres?sslmode=require]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.6
+	Default catalog/schema: postgres/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-19 21:53:40 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-19 21:53:40 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19 21:53:40 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-19 21:53:40 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-19 21:53:40 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-01-19 21:53:41 - Tomcat started on port 8083 (http) with context path '/'
+2026-01-19 21:53:41 - Started StudentEntryApplication in 4.529 seconds (process running for 4.812)
+2026-01-19 21:53:47 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-19 21:53:47 - Initializing Servlet 'dispatcherServlet'
+2026-01-19 21:53:47 - Completed initialization in 1 ms
+2026-01-19 21:53:48 - Received request to save student: StudentsEntity(id=null, name=Karthik K B, department=Maths, state=Karnataka)
+2026-01-19 21:53:49 - Received request to save student: StudentsEntity(id=null, name=Karthik K B, department=Maths, state=Karnataka)
+2026-01-19 21:53:50 - Received request to save student: StudentsEntity(id=null, name=Karthik K B, department=Maths, state=Karnataka)
+2026-01-19 22:19:23 - Received request to save student: StudentsEntity(id=null, name=Karthik K B, department=Maths, state=Karnataka)
+2026-01-19 23:12:19 - Restarting due to 11 class path changes (10 additions, 0 deletions, 1 modification)
+2026-01-19 23:12:19 - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-19 23:12:19 - Graceful shutdown complete
+2026-01-19 23:12:19 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19 23:12:19 - HikariPool-1 - Shutdown initiated...
+2026-01-19 23:12:20 - HikariPool-1 - Shutdown completed.
+2026-01-19 23:12:20 - Starting StudentEntryApplication using Java 21.0.6 with PID 47029 (/Users/karthikkb/Downloads/StudentsEntryApp/target/classes started by karthikkb in /Users/karthikkb/Downloads/StudentsEntryApp)
+2026-01-19 23:12:20 - No active profile set, falling back to 1 default profile: "default"
+2026-01-19 23:12:20 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-19 23:12:20 - Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2026-01-19 23:12:20 - Tomcat initialized with port 8083 (http)
+2026-01-19 23:12:20 - Starting service [Tomcat]
+2026-01-19 23:12:20 - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2026-01-19 23:12:20 - Root WebApplicationContext: initialization completed in 184 ms
+2026-01-19 23:12:20 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-19 23:12:20 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-19 23:12:20 - HikariPool-2 - Starting...
+2026-01-19 23:12:21 - HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@3403ad5
+2026-01-19 23:12:21 - HikariPool-2 - Start completed.
+2026-01-19 23:12:21 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-19 23:12:21 - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://db.cjvlwkhpokykjpmxpizw.supabase.co:5432/postgres?sslmode=require]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.6
+	Default catalog/schema: postgres/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-19 23:12:21 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-19 23:12:22 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19 23:12:22 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-19 23:12:22 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-01-19 23:12:22 - Tomcat started on port 8083 (http) with context path '/'
+2026-01-19 23:12:22 - Started StudentEntryApplication in 1.741 seconds (process running for 4725.982)
+2026-01-19 23:12:22 - Condition evaluation unchanged
+2026-01-19 23:15:48 - Restarting due to 2 class path changes (0 additions, 2 deletions, 0 modifications)
+2026-01-19 23:15:48 - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-19 23:15:48 - Graceful shutdown complete
+2026-01-19 23:15:48 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19 23:15:48 - HikariPool-2 - Shutdown initiated...
+2026-01-19 23:15:49 - HikariPool-2 - Shutdown completed.
+2026-01-19 23:15:49 - Starting StudentEntryApplication using Java 21.0.6 with PID 47029 (/Users/karthikkb/Downloads/StudentsEntryApp/target/classes started by karthikkb in /Users/karthikkb/Downloads/StudentsEntryApp)
+2026-01-19 23:15:49 - No active profile set, falling back to 1 default profile: "default"
+2026-01-19 23:15:49 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-19 23:15:49 - Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interface.
+2026-01-19 23:15:49 - Tomcat initialized with port 8083 (http)
+2026-01-19 23:15:49 - Starting service [Tomcat]
+2026-01-19 23:15:49 - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2026-01-19 23:15:49 - Root WebApplicationContext: initialization completed in 111 ms
+2026-01-19 23:15:49 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-19 23:15:49 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-19 23:15:49 - HikariPool-3 - Starting...
+2026-01-19 23:15:50 - HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@19f8ac12
+2026-01-19 23:15:50 - HikariPool-3 - Start completed.
+2026-01-19 23:15:50 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-19 23:15:50 - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://db.cjvlwkhpokykjpmxpizw.supabase.co:5432/postgres?sslmode=require]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.6
+	Default catalog/schema: postgres/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-19 23:15:50 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-19 23:15:50 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19 23:15:50 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-19 23:15:50 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-01-19 23:15:50 - Tomcat started on port 8083 (http) with context path '/'
+2026-01-19 23:15:50 - Started StudentEntryApplication in 1.392 seconds (process running for 4934.409)
+2026-01-19 23:15:50 - Condition evaluation unchanged
+2026-01-19 23:21:40 - Restarting due to 6 class path changes (5 additions, 0 deletions, 1 modification)
+2026-01-19 23:21:40 - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-19 23:21:40 - Graceful shutdown complete
+2026-01-19 23:21:40 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19 23:21:40 - HikariPool-3 - Shutdown initiated...
+2026-01-19 23:21:40 - HikariPool-3 - Shutdown completed.
+2026-01-19 23:21:40 - Starting StudentEntryApplication using Java 21.0.6 with PID 47029 (/Users/karthikkb/Downloads/StudentsEntryApp/target/classes started by karthikkb in /Users/karthikkb/Downloads/StudentsEntryApp)
+2026-01-19 23:21:40 - No active profile set, falling back to 1 default profile: "default"
+2026-01-19 23:21:40 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-19 23:21:40 - Finished Spring Data repository scanning in 3 ms. Found 2 JPA repository interfaces.
+2026-01-19 23:21:40 - Tomcat initialized with port 8083 (http)
+2026-01-19 23:21:40 - Starting service [Tomcat]
+2026-01-19 23:21:40 - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2026-01-19 23:21:40 - Root WebApplicationContext: initialization completed in 83 ms
+2026-01-19 23:21:40 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-19 23:21:40 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-19 23:21:40 - HikariPool-4 - Starting...
+2026-01-19 23:21:41 - HikariPool-4 - Added connection org.postgresql.jdbc.PgConnection@72730bd6
+2026-01-19 23:21:41 - HikariPool-4 - Start completed.
+2026-01-19 23:21:41 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-19 23:21:41 - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://db.cjvlwkhpokykjpmxpizw.supabase.co:5432/postgres?sslmode=require]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.6
+	Default catalog/schema: postgres/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-19 23:21:41 - HHH000182: No default (no-argument) constructor for class [com.karthik.StudentEntryApp.entity.UsersEntity] (class must be instantiated by Interceptor)
+2026-01-19 23:21:41 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-19 23:21:41 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19 23:21:41 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-19 23:21:41 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-01-19 23:21:42 - Tomcat started on port 8083 (http) with context path '/'
+2026-01-19 23:21:42 - Started StudentEntryApplication in 1.306 seconds (process running for 5285.681)
+2026-01-19 23:21:42 - Condition evaluation unchanged
+2026-01-19 23:22:09 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-01-19 23:22:09 - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-19 23:22:09 - Graceful shutdown complete
+2026-01-19 23:22:09 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19 23:22:09 - HikariPool-4 - Shutdown initiated...
+2026-01-19 23:22:10 - HikariPool-4 - Shutdown completed.
+2026-01-19 23:22:10 - Starting StudentEntryApplication using Java 21.0.6 with PID 47029 (/Users/karthikkb/Downloads/StudentsEntryApp/target/classes started by karthikkb in /Users/karthikkb/Downloads/StudentsEntryApp)
+2026-01-19 23:22:10 - No active profile set, falling back to 1 default profile: "default"
+2026-01-19 23:22:10 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-19 23:22:10 - Finished Spring Data repository scanning in 3 ms. Found 2 JPA repository interfaces.
+2026-01-19 23:22:10 - Tomcat initialized with port 8083 (http)
+2026-01-19 23:22:10 - Starting service [Tomcat]
+2026-01-19 23:22:10 - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2026-01-19 23:22:10 - Root WebApplicationContext: initialization completed in 203 ms
+2026-01-19 23:22:10 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-19 23:22:10 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-19 23:22:10 - HikariPool-5 - Starting...
+2026-01-19 23:22:11 - HikariPool-5 - Added connection org.postgresql.jdbc.PgConnection@2756aa81
+2026-01-19 23:22:11 - HikariPool-5 - Start completed.
+2026-01-19 23:22:11 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-19 23:22:11 - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://db.cjvlwkhpokykjpmxpizw.supabase.co:5432/postgres?sslmode=require]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.6
+	Default catalog/schema: postgres/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-19 23:22:11 - HHH000182: No default (no-argument) constructor for class [com.karthik.StudentEntryApp.entity.UsersEntity] (class must be instantiated by Interceptor)
+2026-01-19 23:22:11 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-19 23:22:11 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19 23:22:11 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-19 23:22:11 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-01-19 23:22:11 - Tomcat started on port 8083 (http) with context path '/'
+2026-01-19 23:22:11 - Started StudentEntryApplication in 1.373 seconds (process running for 5315.492)
+2026-01-19 23:22:11 - Condition evaluation unchanged
+2026-01-19 23:22:51 - Restarting due to 9 class path changes (7 additions, 0 deletions, 2 modifications)
+2026-01-19 23:22:51 - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-19 23:22:51 - Graceful shutdown complete
+2026-01-19 23:22:51 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19 23:22:51 - HikariPool-5 - Shutdown initiated...
+2026-01-19 23:22:51 - HikariPool-5 - Shutdown completed.
+2026-01-19 23:22:52 - Starting StudentEntryApplication using Java 21.0.6 with PID 47029 (/Users/karthikkb/Downloads/StudentsEntryApp/target/classes started by karthikkb in /Users/karthikkb/Downloads/StudentsEntryApp)
+2026-01-19 23:22:52 - No active profile set, falling back to 1 default profile: "default"
+2026-01-19 23:22:52 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-19 23:22:52 - Finished Spring Data repository scanning in 3 ms. Found 2 JPA repository interfaces.
+2026-01-19 23:22:52 - Tomcat initialized with port 8083 (http)
+2026-01-19 23:22:52 - Starting service [Tomcat]
+2026-01-19 23:22:52 - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2026-01-19 23:22:52 - Root WebApplicationContext: initialization completed in 83 ms
+2026-01-19 23:22:52 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-19 23:22:52 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-19 23:22:52 - HikariPool-6 - Starting...
+2026-01-19 23:22:52 - HikariPool-6 - Added connection org.postgresql.jdbc.PgConnection@ca85340
+2026-01-19 23:22:52 - HikariPool-6 - Start completed.
+2026-01-19 23:22:52 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-19 23:22:53 - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://db.cjvlwkhpokykjpmxpizw.supabase.co:5432/postgres?sslmode=require]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.6
+	Default catalog/schema: postgres/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-19 23:22:53 - HHH000182: No default (no-argument) constructor for class [com.karthik.StudentEntryApp.entity.UsersEntity] (class must be instantiated by Interceptor)
+2026-01-19 23:22:53 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-19 23:22:53 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19 23:22:53 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-19 23:22:53 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-01-19 23:22:53 - Tomcat started on port 8083 (http) with context path '/'
+2026-01-19 23:22:53 - Started StudentEntryApplication in 1.412 seconds (process running for 5357.17)
+2026-01-19 23:22:53 - Condition evaluation unchanged
+2026-01-19 23:23:11 - Restarting due to 8 class path changes (7 additions, 0 deletions, 1 modification)
+2026-01-19 23:23:11 - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-19 23:23:11 - Graceful shutdown complete
+2026-01-19 23:23:11 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19 23:23:11 - HikariPool-6 - Shutdown initiated...
+2026-01-19 23:23:12 - HikariPool-6 - Shutdown completed.
+2026-01-19 23:23:12 - Starting StudentEntryApplication using Java 21.0.6 with PID 47029 (/Users/karthikkb/Downloads/StudentsEntryApp/target/classes started by karthikkb in /Users/karthikkb/Downloads/StudentsEntryApp)
+2026-01-19 23:23:12 - No active profile set, falling back to 1 default profile: "default"
+2026-01-19 23:23:12 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-19 23:23:12 - Finished Spring Data repository scanning in 2 ms. Found 2 JPA repository interfaces.
+2026-01-19 23:23:12 - Tomcat initialized with port 8083 (http)
+2026-01-19 23:23:12 - Starting service [Tomcat]
+2026-01-19 23:23:12 - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2026-01-19 23:23:12 - Root WebApplicationContext: initialization completed in 73 ms
+2026-01-19 23:23:12 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-19 23:23:12 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-19 23:23:12 - HikariPool-7 - Starting...
+2026-01-19 23:23:13 - HikariPool-7 - Added connection org.postgresql.jdbc.PgConnection@62ad9abf
+2026-01-19 23:23:13 - HikariPool-7 - Start completed.
+2026-01-19 23:23:13 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-19 23:23:13 - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://db.cjvlwkhpokykjpmxpizw.supabase.co:5432/postgres?sslmode=require]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.6
+	Default catalog/schema: postgres/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-19 23:23:13 - HHH000182: No default (no-argument) constructor for class [com.karthik.StudentEntryApp.entity.UsersEntity] (class must be instantiated by Interceptor)
+2026-01-19 23:23:13 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-19 23:23:13 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19 23:23:13 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-19 23:23:13 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-01-19 23:23:13 - Tomcat started on port 8083 (http) with context path '/'
+2026-01-19 23:23:13 - Started StudentEntryApplication in 1.353 seconds (process running for 5377.574)
+2026-01-19 23:23:13 - Condition evaluation unchanged
+2026-01-19 23:23:13 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-19 23:23:13 - Initializing Servlet 'dispatcherServlet'
+2026-01-19 23:23:13 - Completed initialization in 1 ms
+2026-01-19 23:23:14 - Received request to save student: StudentsEntity(id=null, name=Karthik K B, department=Maths, state=Karnataka)
+2026-01-19 23:23:15 - Received request to save student: StudentsEntity(id=null, name=Karthik K B, department=Maths, state=Karnataka)
+2026-01-19 23:24:35 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2026-01-19 23:24:43 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2026-01-19 23:24:44 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2026-01-19 23:24:51 - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-19 23:24:51 - Graceful shutdown complete
+2026-01-19 23:24:51 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19 23:24:51 - HikariPool-7 - Shutdown initiated...
+2026-01-19 23:24:52 - HikariPool-7 - Shutdown completed.
+2026-01-19 23:24:53 - Starting StudentEntryApplication using Java 21.0.6 with PID 60720 (/Users/karthikkb/Downloads/StudentsEntryApp/target/classes started by karthikkb in /Users/karthikkb/Downloads/StudentsEntryApp)
+2026-01-19 23:24:53 - No active profile set, falling back to 1 default profile: "default"
+2026-01-19 23:24:53 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-01-19 23:24:53 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-01-19 23:24:54 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-19 23:24:54 - Finished Spring Data repository scanning in 15 ms. Found 2 JPA repository interfaces.
+2026-01-19 23:24:54 - Tomcat initialized with port 8083 (http)
+2026-01-19 23:24:54 - Starting service [Tomcat]
+2026-01-19 23:24:54 - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2026-01-19 23:24:54 - Root WebApplicationContext: initialization completed in 693 ms
+2026-01-19 23:24:54 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-19 23:24:54 - HHH000412: Hibernate ORM core version 7.1.8.Final
+2026-01-19 23:24:54 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-19 23:24:54 - HikariPool-1 - Starting...
+2026-01-19 23:24:55 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@17614bcd
+2026-01-19 23:24:55 - HikariPool-1 - Start completed.
+2026-01-19 23:24:55 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-19 23:24:55 - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://db.cjvlwkhpokykjpmxpizw.supabase.co:5432/postgres?sslmode=require]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.6
+	Default catalog/schema: postgres/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-19 23:24:56 - HHH000182: No default (no-argument) constructor for class [com.karthik.StudentEntryApp.entity.UsersEntity] (class must be instantiated by Interceptor)
+2026-01-19 23:24:56 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-19 23:24:56 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19 23:24:56 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-19 23:24:56 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-19 23:24:56 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-01-19 23:24:56 - Tomcat started on port 8083 (http) with context path '/'
+2026-01-19 23:24:56 - Started StudentEntryApplication in 3.626 seconds (process running for 3.902)
+2026-01-19 23:24:57 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-19 23:24:57 - Initializing Servlet 'dispatcherServlet'
+2026-01-19 23:24:57 - Completed initialization in 1 ms
+2026-01-19 23:24:57 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2026-01-19 23:24:58 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2026-01-19 23:24:59 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2026-01-19 23:25:15 - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-19 23:25:15 - Graceful shutdown complete
+2026-01-19 23:25:15 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19 23:25:15 - HikariPool-1 - Shutdown initiated...
+2026-01-19 23:25:15 - HikariPool-1 - Shutdown completed.
+2026-01-19 23:25:17 - Starting StudentEntryApplication using Java 21.0.6 with PID 60754 (/Users/karthikkb/Downloads/StudentsEntryApp/target/classes started by karthikkb in /Users/karthikkb/Downloads/StudentsEntryApp)
+2026-01-19 23:25:17 - No active profile set, falling back to 1 default profile: "default"
+2026-01-19 23:25:17 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-01-19 23:25:17 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-01-19 23:25:18 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-19 23:25:18 - Finished Spring Data repository scanning in 16 ms. Found 2 JPA repository interfaces.
+2026-01-19 23:25:18 - Tomcat initialized with port 8083 (http)
+2026-01-19 23:25:18 - Starting service [Tomcat]
+2026-01-19 23:25:18 - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2026-01-19 23:25:18 - Root WebApplicationContext: initialization completed in 512 ms
+2026-01-19 23:25:18 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-19 23:25:18 - HHH000412: Hibernate ORM core version 7.1.8.Final
+2026-01-19 23:25:18 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-19 23:25:18 - HikariPool-1 - Starting...
+2026-01-19 23:25:19 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@75e0d08
+2026-01-19 23:25:19 - HikariPool-1 - Start completed.
+2026-01-19 23:25:19 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-19 23:25:19 - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://db.cjvlwkhpokykjpmxpizw.supabase.co:5432/postgres?sslmode=require]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.6
+	Default catalog/schema: postgres/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-19 23:25:19 - HHH000182: No default (no-argument) constructor for class [com.karthik.StudentEntryApp.entity.UsersEntity] (class must be instantiated by Interceptor)
+2026-01-19 23:25:19 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-19 23:25:20 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19 23:25:20 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-19 23:25:20 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-19 23:25:20 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-01-19 23:25:20 - Tomcat started on port 8083 (http) with context path '/'
+2026-01-19 23:25:20 - Started StudentEntryApplication in 3.2 seconds (process running for 3.446)
+2026-01-19 23:25:21 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-19 23:25:21 - Initializing Servlet 'dispatcherServlet'
+2026-01-19 23:25:21 - Completed initialization in 1 ms
+2026-01-19 23:26:59 - Restarting due to 10 class path changes (7 additions, 0 deletions, 3 modifications)
+2026-01-19 23:26:59 - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-19 23:26:59 - Graceful shutdown complete
+2026-01-19 23:26:59 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19 23:26:59 - HikariPool-1 - Shutdown initiated...
+2026-01-19 23:27:00 - HikariPool-1 - Shutdown completed.
+2026-01-19 23:27:00 - Starting StudentEntryApplication using Java 21.0.6 with PID 60754 (/Users/karthikkb/Downloads/StudentsEntryApp/target/classes started by karthikkb in /Users/karthikkb/Downloads/StudentsEntryApp)
+2026-01-19 23:27:00 - No active profile set, falling back to 1 default profile: "default"
+2026-01-19 23:27:00 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-19 23:27:00 - Finished Spring Data repository scanning in 3 ms. Found 2 JPA repository interfaces.
+2026-01-19 23:27:00 - Tomcat initialized with port 8083 (http)
+2026-01-19 23:27:00 - Starting service [Tomcat]
+2026-01-19 23:27:00 - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2026-01-19 23:27:00 - Root WebApplicationContext: initialization completed in 141 ms
+2026-01-19 23:27:00 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-19 23:27:00 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-19 23:27:00 - HikariPool-2 - Starting...
+2026-01-19 23:27:01 - HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@3a1cd0ac
+2026-01-19 23:27:01 - HikariPool-2 - Start completed.
+2026-01-19 23:27:01 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-19 23:27:01 - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://db.cjvlwkhpokykjpmxpizw.supabase.co:5432/postgres?sslmode=require]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.6
+	Default catalog/schema: postgres/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-19 23:27:01 - HHH000182: No default (no-argument) constructor for class [com.karthik.StudentEntryApp.entity.UsersEntity] (class must be instantiated by Interceptor)
+2026-01-19 23:27:01 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-19 23:27:01 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19 23:27:01 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-19 23:27:01 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-01-19 23:27:01 - Tomcat started on port 8083 (http) with context path '/'
+2026-01-19 23:27:01 - Started StudentEntryApplication in 1.345 seconds (process running for 104.605)
+2026-01-19 23:27:01 - Condition evaluation unchanged
+2026-01-19 23:28:55 - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-19 23:28:55 - Graceful shutdown complete
+2026-01-19 23:28:55 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19 23:28:55 - HikariPool-2 - Shutdown initiated...
+2026-01-19 23:28:56 - HikariPool-2 - Shutdown completed.
+2026-01-19 23:28:58 - Starting StudentEntryApplication using Java 21.0.6 with PID 61036 (/Users/karthikkb/Downloads/StudentsEntryApp/target/classes started by karthikkb in /Users/karthikkb/Downloads/StudentsEntryApp)
+2026-01-19 23:28:58 - No active profile set, falling back to 1 default profile: "default"
+2026-01-19 23:28:58 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-01-19 23:28:58 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-01-19 23:28:58 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-19 23:28:58 - Finished Spring Data repository scanning in 20 ms. Found 2 JPA repository interfaces.
+2026-01-19 23:28:58 - Tomcat initialized with port 8083 (http)
+2026-01-19 23:28:58 - Starting service [Tomcat]
+2026-01-19 23:28:58 - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2026-01-19 23:28:58 - Root WebApplicationContext: initialization completed in 759 ms
+2026-01-19 23:28:58 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-19 23:28:58 - HHH000412: Hibernate ORM core version 7.1.8.Final
+2026-01-19 23:28:59 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-19 23:28:59 - HikariPool-1 - Starting...
+2026-01-19 23:28:59 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6e5a91e7
+2026-01-19 23:28:59 - HikariPool-1 - Start completed.
+2026-01-19 23:28:59 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-19 23:29:00 - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://db.cjvlwkhpokykjpmxpizw.supabase.co:5432/postgres?sslmode=require]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.6
+	Default catalog/schema: postgres/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-19 23:29:00 - HHH000182: No default (no-argument) constructor for class [com.karthik.StudentEntryApp.entity.UsersEntity] (class must be instantiated by Interceptor)
+2026-01-19 23:29:00 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-19 23:29:00 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19 23:29:00 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-19 23:29:01 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-19 23:29:01 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-01-19 23:29:01 - Tomcat started on port 8083 (http) with context path '/'
+2026-01-19 23:29:01 - Started StudentEntryApplication in 3.462 seconds (process running for 3.826)
+2026-01-19 23:29:02 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-19 23:29:02 - Initializing Servlet 'dispatcherServlet'
+2026-01-19 23:29:02 - Completed initialization in 1 ms
+2026-01-19 23:29:02 - Saving user: null
+2026-01-19 23:29:38 - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-19 23:29:38 - Graceful shutdown complete
+2026-01-19 23:29:38 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19 23:29:38 - HikariPool-1 - Shutdown initiated...
+2026-01-19 23:29:40 - HikariPool-1 - Shutdown completed.
+2026-01-19 23:29:43 - Starting StudentEntryApplication using Java 21.0.6 with PID 61096 (/Users/karthikkb/Downloads/StudentsEntryApp/target/classes started by karthikkb in /Users/karthikkb/Downloads/StudentsEntryApp)
+2026-01-19 23:29:43 - No active profile set, falling back to 1 default profile: "default"
+2026-01-19 23:29:43 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-01-19 23:29:43 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-01-19 23:29:43 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-19 23:29:43 - Finished Spring Data repository scanning in 23 ms. Found 2 JPA repository interfaces.
+2026-01-19 23:29:44 - Tomcat initialized with port 8083 (http)
+2026-01-19 23:29:44 - Starting service [Tomcat]
+2026-01-19 23:29:44 - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2026-01-19 23:29:44 - Root WebApplicationContext: initialization completed in 591 ms
+2026-01-19 23:29:44 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-19 23:29:44 - HHH000412: Hibernate ORM core version 7.1.8.Final
+2026-01-19 23:29:44 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-19 23:29:44 - HikariPool-1 - Starting...
+2026-01-19 23:29:45 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@421fcdb1
+2026-01-19 23:29:45 - HikariPool-1 - Start completed.
+2026-01-19 23:29:45 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-19 23:29:45 - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://db.cjvlwkhpokykjpmxpizw.supabase.co:5432/postgres?sslmode=require]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.6
+	Default catalog/schema: postgres/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-19 23:29:45 - HHH000182: No default (no-argument) constructor for class [com.karthik.StudentEntryApp.entity.UsersEntity] (class must be instantiated by Interceptor)
+2026-01-19 23:29:45 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-19 23:29:46 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19 23:29:46 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-19 23:29:46 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-19 23:29:46 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-01-19 23:29:46 - Tomcat started on port 8083 (http) with context path '/'
+2026-01-19 23:29:46 - Started StudentEntryApplication in 3.334 seconds (process running for 3.678)
+2026-01-19 23:29:49 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-19 23:29:49 - Initializing Servlet 'dispatcherServlet'
+2026-01-19 23:29:49 - Completed initialization in 1 ms
+2026-01-19 23:30:08 - Saving user: null
+2026-01-19 23:30:08 - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-19 23:30:09 - Graceful shutdown complete
+2026-01-19 23:30:09 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19 23:30:09 - HikariPool-1 - Shutdown initiated...
+2026-01-19 23:30:09 - HikariPool-1 - Shutdown completed.
+2026-01-19 23:30:44 - Starting StudentEntryApplication using Java 21.0.6 with PID 61329 (/Users/karthikkb/Downloads/StudentsEntryApp/target/classes started by karthikkb in /Users/karthikkb/Downloads/StudentsEntryApp)
+2026-01-19 23:30:44 - No active profile set, falling back to 1 default profile: "default"
+2026-01-19 23:30:44 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-01-19 23:30:44 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-01-19 23:30:45 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-19 23:30:45 - Finished Spring Data repository scanning in 17 ms. Found 2 JPA repository interfaces.
+2026-01-19 23:30:45 - Tomcat initialized with port 8083 (http)
+2026-01-19 23:30:45 - Starting service [Tomcat]
+2026-01-19 23:30:45 - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2026-01-19 23:30:45 - Root WebApplicationContext: initialization completed in 557 ms
+2026-01-19 23:30:45 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-19 23:30:45 - HHH000412: Hibernate ORM core version 7.1.8.Final
+2026-01-19 23:30:45 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-19 23:30:45 - HikariPool-1 - Starting...
+2026-01-19 23:30:46 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3ae428c7
+2026-01-19 23:30:46 - HikariPool-1 - Start completed.
+2026-01-19 23:30:46 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-19 23:30:46 - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://db.cjvlwkhpokykjpmxpizw.supabase.co:5432/postgres?sslmode=require]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.6
+	Default catalog/schema: postgres/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-19 23:30:47 - HHH000182: No default (no-argument) constructor for class [com.karthik.StudentEntryApp.entity.UsersEntity] (class must be instantiated by Interceptor)
+2026-01-19 23:30:47 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-19 23:30:47 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19 23:30:47 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-19 23:30:47 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-19 23:30:47 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-01-19 23:30:47 - Tomcat started on port 8083 (http) with context path '/'
+2026-01-19 23:30:47 - Started StudentEntryApplication in 3.18 seconds (process running for 3.39)
+2026-01-19 23:30:50 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-19 23:30:50 - Initializing Servlet 'dispatcherServlet'
+2026-01-19 23:30:50 - Completed initialization in 1 ms
+2026-01-19 23:30:50 - Received request to register user: null
+2026-01-19 23:30:51 - Saving user: null
+2026-01-19 23:31:24 - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-19 23:31:24 - Graceful shutdown complete
+2026-01-19 23:31:24 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19 23:31:24 - HikariPool-1 - Shutdown initiated...
+2026-01-19 23:31:24 - HikariPool-1 - Shutdown completed.
+2026-01-19 23:31:26 - Starting StudentEntryApplication using Java 21.0.6 with PID 61385 (/Users/karthikkb/Downloads/StudentsEntryApp/target/classes started by karthikkb in /Users/karthikkb/Downloads/StudentsEntryApp)
+2026-01-19 23:31:26 - No active profile set, falling back to 1 default profile: "default"
+2026-01-19 23:31:26 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-01-19 23:31:26 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-01-19 23:31:26 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-19 23:31:26 - Finished Spring Data repository scanning in 17 ms. Found 2 JPA repository interfaces.
+2026-01-19 23:31:27 - Tomcat initialized with port 8083 (http)
+2026-01-19 23:31:27 - Starting service [Tomcat]
+2026-01-19 23:31:27 - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2026-01-19 23:31:27 - Root WebApplicationContext: initialization completed in 574 ms
+2026-01-19 23:31:27 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-19 23:31:27 - HHH000412: Hibernate ORM core version 7.1.8.Final
+2026-01-19 23:31:27 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-19 23:31:27 - HikariPool-1 - Starting...
+2026-01-19 23:31:28 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@56850890
+2026-01-19 23:31:28 - HikariPool-1 - Start completed.
+2026-01-19 23:31:28 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-19 23:31:28 - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://db.cjvlwkhpokykjpmxpizw.supabase.co:5432/postgres?sslmode=require]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.6
+	Default catalog/schema: postgres/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-19 23:31:28 - HHH000182: No default (no-argument) constructor for class [com.karthik.StudentEntryApp.entity.UsersEntity] (class must be instantiated by Interceptor)
+2026-01-19 23:31:28 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-19 23:31:29 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19 23:31:29 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-19 23:31:29 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-19 23:31:29 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-01-19 23:31:29 - Tomcat started on port 8083 (http) with context path '/'
+2026-01-19 23:31:29 - Started StudentEntryApplication in 3.248 seconds (process running for 3.481)
+2026-01-19 23:31:30 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-19 23:31:30 - Initializing Servlet 'dispatcherServlet'
+2026-01-19 23:31:30 - Completed initialization in 1 ms
+2026-01-19 23:31:30 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.http.converter.HttpMessageConversionException: Type definition error: [simple type, class com.karthik.StudentEntryApp.entity.UsersEntity]] with root cause
+tools.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `com.karthik.StudentEntryApp.entity.UsersEntity` (no Creators, like default constructor, exist): cannot deserialize from Object value (no delegate- or property-based Creator)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); byte offset: #6]
+	at tools.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:70)
+	at tools.jackson.databind.DeserializationContext.reportBadDefinition(DeserializationContext.java:1958)
+	at tools.jackson.databind.DatabindContext.reportBadDefinition(DatabindContext.java:448)
+	at tools.jackson.databind.DeserializationContext.handleMissingInstantiator(DeserializationContext.java:1488)
+	at tools.jackson.databind.deser.bean.BeanDeserializerBase.deserializeFromObjectUsingNonDefault(BeanDeserializerBase.java:1432)
+	at tools.jackson.databind.deser.bean.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:480)
+	at tools.jackson.databind.deser.bean.BeanDeserializer.deserialize(BeanDeserializer.java:200)
+	at tools.jackson.databind.deser.DeserializationContextExt.readRootValue(DeserializationContextExt.java:265)
+	at tools.jackson.databind.ObjectReader._bindAndClose(ObjectReader.java:1646)
+	at tools.jackson.databind.ObjectReader.readValue(ObjectReader.java:1171)
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.readJavaType(AbstractJacksonHttpMessageConverter.java:355)
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.read(AbstractJacksonHttpMessageConverter.java:322)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:203)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:175)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:150)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:230)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:180)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:235)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:371)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:132)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:86)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:181)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:198)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-01-19 23:31:32 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.http.converter.HttpMessageConversionException: Type definition error: [simple type, class com.karthik.StudentEntryApp.entity.UsersEntity]] with root cause
+tools.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `com.karthik.StudentEntryApp.entity.UsersEntity` (no Creators, like default constructor, exist): cannot deserialize from Object value (no delegate- or property-based Creator)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); byte offset: #6]
+	at tools.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:70)
+	at tools.jackson.databind.DeserializationContext.reportBadDefinition(DeserializationContext.java:1958)
+	at tools.jackson.databind.DatabindContext.reportBadDefinition(DatabindContext.java:448)
+	at tools.jackson.databind.DeserializationContext.handleMissingInstantiator(DeserializationContext.java:1488)
+	at tools.jackson.databind.deser.bean.BeanDeserializerBase.deserializeFromObjectUsingNonDefault(BeanDeserializerBase.java:1432)
+	at tools.jackson.databind.deser.bean.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:480)
+	at tools.jackson.databind.deser.bean.BeanDeserializer.deserialize(BeanDeserializer.java:200)
+	at tools.jackson.databind.deser.DeserializationContextExt.readRootValue(DeserializationContextExt.java:265)
+	at tools.jackson.databind.ObjectReader._bindAndClose(ObjectReader.java:1646)
+	at tools.jackson.databind.ObjectReader.readValue(ObjectReader.java:1171)
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.readJavaType(AbstractJacksonHttpMessageConverter.java:355)
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.read(AbstractJacksonHttpMessageConverter.java:322)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:203)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:175)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:150)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:230)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:180)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:235)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:371)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:132)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:86)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:181)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:198)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-01-19 23:32:13 - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-19 23:32:13 - Graceful shutdown complete
+2026-01-19 23:32:13 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19 23:32:13 - HikariPool-1 - Shutdown initiated...
+2026-01-19 23:32:14 - HikariPool-1 - Shutdown completed.
+2026-01-19 23:32:16 - Starting StudentEntryApplication using Java 21.0.6 with PID 61444 (/Users/karthikkb/Downloads/StudentsEntryApp/target/classes started by karthikkb in /Users/karthikkb/Downloads/StudentsEntryApp)
+2026-01-19 23:32:16 - No active profile set, falling back to 1 default profile: "default"
+2026-01-19 23:32:16 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-01-19 23:32:16 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-01-19 23:32:16 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-19 23:32:16 - Finished Spring Data repository scanning in 24 ms. Found 2 JPA repository interfaces.
+2026-01-19 23:32:16 - Tomcat initialized with port 8083 (http)
+2026-01-19 23:32:16 - Starting service [Tomcat]
+2026-01-19 23:32:16 - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2026-01-19 23:32:16 - Root WebApplicationContext: initialization completed in 707 ms
+2026-01-19 23:32:17 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-19 23:32:17 - HHH000412: Hibernate ORM core version 7.1.8.Final
+2026-01-19 23:32:17 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-19 23:32:17 - HikariPool-1 - Starting...
+2026-01-19 23:32:17 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6094b688
+2026-01-19 23:32:17 - HikariPool-1 - Start completed.
+2026-01-19 23:32:17 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-19 23:32:18 - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://db.cjvlwkhpokykjpmxpizw.supabase.co:5432/postgres?sslmode=require]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.6
+	Default catalog/schema: postgres/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-19 23:32:18 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-19 23:32:18 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19 23:32:18 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-19 23:32:19 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-19 23:32:19 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-01-19 23:32:19 - Tomcat started on port 8083 (http) with context path '/'
+2026-01-19 23:32:19 - Started StudentEntryApplication in 3.367 seconds (process running for 3.578)
+2026-01-19 23:32:20 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-19 23:32:20 - Initializing Servlet 'dispatcherServlet'
+2026-01-19 23:32:20 - Completed initialization in 1 ms
+2026-01-19 23:32:20 - Received request to register user: karthikkb
+2026-01-19 23:32:20 - Saving user: karthikkb
