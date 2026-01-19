@@ -53,7 +53,7 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(EmailAlreadyExists.class)
     public ResponseEntity<ErrorMessage> emailAlreadyExistsExceptionHandler(Exception e){
-        ErrorMessage message = new ErrorMessage(HttpStatus.NO_CONTENT.value(), e.getMessage());
+        ErrorMessage message = new ErrorMessage(HttpStatus.CONFLICT.value(), e.getMessage());
         return ResponseEntity.status(HttpStatus.CONFLICT).body(message);
     }
 
