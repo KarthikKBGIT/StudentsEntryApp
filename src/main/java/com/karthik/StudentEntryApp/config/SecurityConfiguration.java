@@ -16,11 +16,9 @@ public class SecurityConfiguration {
     public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity){
         return httpSecurity.csrf(customizer -> customizer.disable())
                 .authorizeHttpRequests(auth -> auth.anyRequest().authenticated())
-                .formLogin(Customizer.withDefaults())
                 .httpBasic(Customizer.withDefaults())
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .build();
-        //return httpSecurity.build();
     }
 
 }
