@@ -3998,3 +3998,641 @@ org.postgresql.util.PSQLException: ERROR: prepared statement "S_1" already exist
 2026-02-12 23:06:28 - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2026-02-12 23:06:28 - Initializing Servlet 'dispatcherServlet'
 2026-02-12 23:06:28 - Completed initialization in 1 ms
+2026-02-12 23:07:44 - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-12 23:07:44 - Graceful shutdown complete
+2026-02-12 23:07:44 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-12 23:07:44 - HikariPool-1 - Shutdown initiated...
+2026-02-12 23:07:44 - HikariPool-1 - Shutdown completed.
+2026-02-12 23:07:46 - Starting StudentEntryApplication using Java 21.0.6 with PID 87891 (/Users/karthikkb/Downloads/StudentsEntryApp/target/classes started by karthikkb in /Users/karthikkb/Downloads/StudentsEntryApp)
+2026-02-12 23:07:46 - No active profile set, falling back to 1 default profile: "default"
+2026-02-12 23:07:46 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-02-12 23:07:46 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-02-12 23:07:46 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-12 23:07:46 - Finished Spring Data repository scanning in 17 ms. Found 2 JPA repository interfaces.
+2026-02-12 23:07:46 - Tomcat initialized with port 8083 (http)
+2026-02-12 23:07:46 - Starting service [Tomcat]
+2026-02-12 23:07:46 - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2026-02-12 23:07:46 - Root WebApplicationContext: initialization completed in 541 ms
+2026-02-12 23:07:46 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-12 23:07:46 - HHH000412: Hibernate ORM core version 7.1.8.Final
+2026-02-12 23:07:46 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-12 23:07:46 - HikariPool-1 - Starting...
+2026-02-12 23:07:47 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7616ae4
+2026-02-12 23:07:47 - HikariPool-1 - Start completed.
+2026-02-12 23:07:47 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-12 23:07:47 - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://aws-1-ap-southeast-1.pooler.supabase.com:6543/postgres?sslmode=require]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.6
+	Default catalog/schema: postgres/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-12 23:07:48 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-12 23:07:48 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-12 23:07:48 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-12 23:07:48 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-12 23:07:48 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2026-02-12 23:07:49 - Tomcat started on port 8083 (http) with context path '/'
+2026-02-12 23:07:49 - Started StudentEntryApplication in 3.316 seconds (process running for 3.519)
+2026-02-12 23:07:52 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-12 23:07:52 - Initializing Servlet 'dispatcherServlet'
+2026-02-12 23:07:52 - Completed initialization in 1 ms
+2026-02-12 23:08:09 - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-12 23:08:09 - Graceful shutdown complete
+2026-02-12 23:08:09 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-12 23:08:09 - HikariPool-1 - Shutdown initiated...
+2026-02-12 23:08:10 - HikariPool-1 - Shutdown completed.
+2026-02-12 23:08:15 - Starting StudentEntryApplication using Java 21.0.6 with PID 87946 (/Users/karthikkb/Downloads/StudentsEntryApp/target/classes started by karthikkb in /Users/karthikkb/Downloads/StudentsEntryApp)
+2026-02-12 23:08:15 - No active profile set, falling back to 1 default profile: "default"
+2026-02-12 23:08:15 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-02-12 23:08:15 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-02-12 23:08:16 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-12 23:08:16 - Finished Spring Data repository scanning in 18 ms. Found 2 JPA repository interfaces.
+2026-02-12 23:08:16 - Tomcat initialized with port 8083 (http)
+2026-02-12 23:08:16 - Starting service [Tomcat]
+2026-02-12 23:08:16 - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2026-02-12 23:08:16 - Root WebApplicationContext: initialization completed in 539 ms
+2026-02-12 23:08:16 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-12 23:08:16 - HHH000412: Hibernate ORM core version 7.1.8.Final
+2026-02-12 23:08:16 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-12 23:08:16 - HikariPool-1 - Starting...
+2026-02-12 23:08:17 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@317897e2
+2026-02-12 23:08:17 - HikariPool-1 - Start completed.
+2026-02-12 23:08:17 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-12 23:08:17 - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://aws-1-ap-southeast-1.pooler.supabase.com:6543/postgres?sslmode=require]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.6
+	Default catalog/schema: postgres/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-12 23:08:18 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-12 23:08:18 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-12 23:08:18 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-12 23:08:18 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-12 23:08:18 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2026-02-12 23:08:19 - Tomcat started on port 8083 (http) with context path '/'
+2026-02-12 23:08:19 - Started StudentEntryApplication in 3.561 seconds (process running for 3.771)
+2026-02-12 23:08:19 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-12 23:08:19 - Initializing Servlet 'dispatcherServlet'
+2026-02-12 23:08:19 - Completed initialization in 1 ms
+2026-02-12 23:08:28 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-02-12 23:08:28 - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-12 23:08:28 - Graceful shutdown complete
+2026-02-12 23:08:28 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-12 23:08:28 - HikariPool-1 - Shutdown initiated...
+2026-02-12 23:08:29 - HikariPool-1 - Shutdown completed.
+2026-02-12 23:08:29 - Starting StudentEntryApplication using Java 21.0.6 with PID 87946 (/Users/karthikkb/Downloads/StudentsEntryApp/target/classes started by karthikkb in /Users/karthikkb/Downloads/StudentsEntryApp)
+2026-02-12 23:08:29 - No active profile set, falling back to 1 default profile: "default"
+2026-02-12 23:08:29 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-12 23:08:29 - Finished Spring Data repository scanning in 3 ms. Found 2 JPA repository interfaces.
+2026-02-12 23:08:29 - Tomcat initialized with port 8083 (http)
+2026-02-12 23:08:29 - Starting service [Tomcat]
+2026-02-12 23:08:29 - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2026-02-12 23:08:29 - Root WebApplicationContext: initialization completed in 106 ms
+2026-02-12 23:08:29 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-12 23:08:29 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-12 23:08:29 - HikariPool-2 - Starting...
+2026-02-12 23:08:30 - HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@7b48b671
+2026-02-12 23:08:30 - HikariPool-2 - Start completed.
+2026-02-12 23:08:30 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-12 23:08:30 - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://aws-1-ap-southeast-1.pooler.supabase.com:6543/postgres?sslmode=require]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.6
+	Default catalog/schema: postgres/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-12 23:08:30 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-12 23:08:30 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-12 23:08:30 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-12 23:08:30 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2026-02-12 23:08:30 - Tomcat started on port 8083 (http) with context path '/'
+2026-02-12 23:08:30 - Started StudentEntryApplication in 1.372 seconds (process running for 15.622)
+2026-02-12 23:08:30 - Condition evaluation unchanged
+2026-02-12 23:15:01 - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2026-02-12 23:15:01 - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-12 23:15:01 - Graceful shutdown complete
+2026-02-12 23:15:01 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-12 23:15:01 - HikariPool-2 - Shutdown initiated...
+2026-02-12 23:15:01 - HikariPool-2 - Shutdown completed.
+2026-02-12 23:15:01 - Starting StudentEntryApplication using Java 21.0.6 with PID 87946 (/Users/karthikkb/Downloads/StudentsEntryApp/target/classes started by karthikkb in /Users/karthikkb/Downloads/StudentsEntryApp)
+2026-02-12 23:15:01 - No active profile set, falling back to 1 default profile: "default"
+2026-02-12 23:15:02 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-12 23:15:02 - Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interface.
+2026-02-12 23:15:02 - Tomcat initialized with port 8083 (http)
+2026-02-12 23:15:02 - Starting service [Tomcat]
+2026-02-12 23:15:02 - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2026-02-12 23:15:02 - Root WebApplicationContext: initialization completed in 111 ms
+2026-02-12 23:15:02 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-12 23:15:02 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-12 23:15:02 - HikariPool-3 - Starting...
+2026-02-12 23:15:02 - HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@23a7fa39
+2026-02-12 23:15:02 - HikariPool-3 - Start completed.
+2026-02-12 23:15:02 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-12 23:15:02 - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://aws-1-ap-southeast-1.pooler.supabase.com:6543/postgres?sslmode=require]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.6
+	Default catalog/schema: postgres/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-12 23:15:02 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-12 23:15:03 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-12 23:15:03 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'usersController': Unsatisfied dependency expressed through field 'usersService': Error creating bean with name 'usersServiceImplementation' defined in file [/Users/karthikkb/Downloads/StudentsEntryApp/target/classes/com/karthik/StudentEntryApp/service/UsersServiceImplementation.class]: Post-processing of merged bean definition failed
+2026-02-12 23:15:03 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-12 23:15:03 - HikariPool-3 - Shutdown initiated...
+2026-02-12 23:15:03 - HikariPool-3 - Shutdown completed.
+2026-02-12 23:15:03 - Stopping service [Tomcat]
+2026-02-12 23:15:03 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-12 23:15:03 - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'usersController': Unsatisfied dependency expressed through field 'usersService': Error creating bean with name 'usersServiceImplementation' defined in file [/Users/karthikkb/Downloads/StudentsEntryApp/target/classes/com/karthik/StudentEntryApp/service/UsersServiceImplementation.class]: Post-processing of merged bean definition failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:766) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:747) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:492) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1446) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1218) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1184) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1121) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:983) ~[spring-context-7.0.1.jar:7.0.1]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:620) ~[spring-context-7.0.1.jar:7.0.1]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-web-server-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:765) ~[spring-boot-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:454) ~[spring-boot-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321) ~[spring-boot-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1374) ~[spring-boot-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-4.0.0.jar:4.0.0]
+	at com.karthik.StudentEntryApp.StudentEntryApplication.main(StudentEntryApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52) ~[spring-boot-devtools-4.0.0.jar:4.0.0]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'usersServiceImplementation' defined in file [/Users/karthikkb/Downloads/StudentsEntryApp/target/classes/com/karthik/StudentEntryApp/service/UsersServiceImplementation.class]: Post-processing of merged bean definition failed
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:580) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:229) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1762) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1651) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:763) ~[spring-beans-7.0.1.jar:7.0.1]
+	... 25 common frames omitted
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.karthik.StudentEntryApp.service.UsersServiceImplementation] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@3d7503d9]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:756) ~[spring-core-7.0.1.jar:7.0.1]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:689) ~[spring-core-7.0.1.jar:7.0.1]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.buildPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:430) ~[spring-orm-7.0.1.jar:7.0.1]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:411) ~[spring-orm-7.0.1.jar:7.0.1]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findInjectionMetadata(PersistenceAnnotationBeanPostProcessor.java:370) ~[spring-orm-7.0.1.jar:7.0.1]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(PersistenceAnnotationBeanPostProcessor.java:347) ~[spring-orm-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1114) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:577) ~[spring-beans-7.0.1.jar:7.0.1]
+	... 34 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/karthik/StudentEntryApp/repository/UsersRepository
+	at java.base/java.lang.Class.getDeclaredFields0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredFields(Class.java:3473) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredFields(Class.java:2542) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:751) ~[spring-core-7.0.1.jar:7.0.1]
+	... 41 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.karthik.StudentEntryApp.repository.UsersRepository
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:534) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:513) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:123) ~[spring-boot-devtools-4.0.0.jar:4.0.0]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[na:na]
+	... 45 common frames omitted
+2026-02-12 23:15:24 - Starting StudentEntryApplication using Java 21.0.6 with PID 87946 (/Users/karthikkb/Downloads/StudentsEntryApp/target/classes started by karthikkb in /Users/karthikkb/Downloads/StudentsEntryApp)
+2026-02-12 23:15:24 - No active profile set, falling back to 1 default profile: "default"
+2026-02-12 23:15:24 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-12 23:15:24 - Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interface.
+2026-02-12 23:15:24 - Tomcat initialized with port 8083 (http)
+2026-02-12 23:15:24 - Starting service [Tomcat]
+2026-02-12 23:15:24 - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2026-02-12 23:15:24 - Root WebApplicationContext: initialization completed in 91 ms
+2026-02-12 23:15:24 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-12 23:15:24 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-12 23:15:24 - HikariPool-4 - Starting...
+2026-02-12 23:15:25 - HikariPool-4 - Added connection org.postgresql.jdbc.PgConnection@28d6e85c
+2026-02-12 23:15:25 - HikariPool-4 - Start completed.
+2026-02-12 23:15:25 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-12 23:15:25 - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://aws-1-ap-southeast-1.pooler.supabase.com:6543/postgres?sslmode=require]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.6
+	Default catalog/schema: postgres/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-12 23:15:25 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-12 23:15:25 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-12 23:15:25 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'usersController' defined in file [/Users/karthikkb/Downloads/StudentsEntryApp/target/classes/com/karthik/StudentEntryApp/controller/UsersController.class]: Post-processing of merged bean definition failed
+2026-02-12 23:15:25 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-12 23:15:25 - HikariPool-4 - Shutdown initiated...
+2026-02-12 23:15:25 - HikariPool-4 - Shutdown completed.
+2026-02-12 23:15:25 - Stopping service [Tomcat]
+2026-02-12 23:15:25 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-12 23:15:25 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'usersController' defined in file [/Users/karthikkb/Downloads/StudentsEntryApp/target/classes/com/karthik/StudentEntryApp/controller/UsersController.class]: Post-processing of merged bean definition failed
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:580) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1218) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1184) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1121) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:983) ~[spring-context-7.0.1.jar:7.0.1]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:620) ~[spring-context-7.0.1.jar:7.0.1]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-web-server-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:765) ~[spring-boot-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:454) ~[spring-boot-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321) ~[spring-boot-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1374) ~[spring-boot-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-4.0.0.jar:4.0.0]
+	at com.karthik.StudentEntryApp.StudentEntryApplication.main(StudentEntryApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52) ~[spring-boot-devtools-4.0.0.jar:4.0.0]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.karthik.StudentEntryApp.controller.UsersController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@30e7882f]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:756) ~[spring-core-7.0.1.jar:7.0.1]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:689) ~[spring-core-7.0.1.jar:7.0.1]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.buildPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:430) ~[spring-orm-7.0.1.jar:7.0.1]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:411) ~[spring-orm-7.0.1.jar:7.0.1]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findInjectionMetadata(PersistenceAnnotationBeanPostProcessor.java:370) ~[spring-orm-7.0.1.jar:7.0.1]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(PersistenceAnnotationBeanPostProcessor.java:347) ~[spring-orm-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1114) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:577) ~[spring-beans-7.0.1.jar:7.0.1]
+	... 20 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/karthik/StudentEntryApp/service/UsersServiceImplementation
+	at java.base/java.lang.Class.getDeclaredFields0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredFields(Class.java:3473) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredFields(Class.java:2542) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:751) ~[spring-core-7.0.1.jar:7.0.1]
+	... 27 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.karthik.StudentEntryApp.service.UsersServiceImplementation
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:534) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:513) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:123) ~[spring-boot-devtools-4.0.0.jar:4.0.0]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[na:na]
+	... 31 common frames omitted
+2026-02-12 23:16:33 - Starting StudentEntryApplication using Java 21.0.6 with PID 87946 (/Users/karthikkb/Downloads/StudentsEntryApp/target/classes started by karthikkb in /Users/karthikkb/Downloads/StudentsEntryApp)
+2026-02-12 23:16:33 - No active profile set, falling back to 1 default profile: "default"
+2026-02-12 23:16:33 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-12 23:16:33 - Finished Spring Data repository scanning in 2 ms. Found 2 JPA repository interfaces.
+2026-02-12 23:16:33 - Tomcat initialized with port 8083 (http)
+2026-02-12 23:16:33 - Starting service [Tomcat]
+2026-02-12 23:16:33 - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2026-02-12 23:16:33 - Root WebApplicationContext: initialization completed in 89 ms
+2026-02-12 23:16:33 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-12 23:16:33 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-12 23:16:33 - HikariPool-5 - Starting...
+2026-02-12 23:16:34 - HikariPool-5 - Added connection org.postgresql.jdbc.PgConnection@54394edc
+2026-02-12 23:16:34 - HikariPool-5 - Start completed.
+2026-02-12 23:16:34 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-12 23:16:34 - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://aws-1-ap-southeast-1.pooler.supabase.com:6543/postgres?sslmode=require]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.6
+	Default catalog/schema: postgres/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-12 23:16:34 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-12 23:16:34 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-12 23:16:34 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-12 23:16:34 - Found 2 UserDetailsService beans, with names [customUserDetailsService, userDetailsService]. Global Authentication Manager will not use a UserDetailsService for username/password login. Consider publishing a single UserDetailsService bean.
+2026-02-12 23:16:34 - Tomcat started on port 8083 (http) with context path '/'
+2026-02-12 23:16:34 - Started StudentEntryApplication in 1.398 seconds (process running for 499.674)
+2026-02-12 23:16:34 - Condition evaluation unchanged
+2026-02-12 23:17:03 - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2026-02-12 23:17:03 - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-12 23:17:03 - Graceful shutdown complete
+2026-02-12 23:17:03 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-12 23:17:03 - HikariPool-5 - Shutdown initiated...
+2026-02-12 23:17:04 - HikariPool-5 - Shutdown completed.
+2026-02-12 23:17:04 - Starting StudentEntryApplication using Java 21.0.6 with PID 87946 (/Users/karthikkb/Downloads/StudentsEntryApp/target/classes started by karthikkb in /Users/karthikkb/Downloads/StudentsEntryApp)
+2026-02-12 23:17:04 - No active profile set, falling back to 1 default profile: "default"
+2026-02-12 23:17:04 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-12 23:17:04 - Finished Spring Data repository scanning in 3 ms. Found 2 JPA repository interfaces.
+2026-02-12 23:17:04 - Tomcat initialized with port 8083 (http)
+2026-02-12 23:17:04 - Starting service [Tomcat]
+2026-02-12 23:17:04 - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2026-02-12 23:17:04 - Root WebApplicationContext: initialization completed in 88 ms
+2026-02-12 23:17:04 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-12 23:17:04 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-12 23:17:04 - HikariPool-6 - Starting...
+2026-02-12 23:17:04 - HikariPool-6 - Added connection org.postgresql.jdbc.PgConnection@e156d36
+2026-02-12 23:17:04 - HikariPool-6 - Start completed.
+2026-02-12 23:17:04 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-12 23:17:05 - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://aws-1-ap-southeast-1.pooler.supabase.com:6543/postgres?sslmode=require]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.6
+	Default catalog/schema: postgres/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-12 23:17:05 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-12 23:17:05 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-12 23:17:05 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-12 23:17:05 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2026-02-12 23:17:05 - Tomcat started on port 8083 (http) with context path '/'
+2026-02-12 23:17:05 - Started StudentEntryApplication in 1.282 seconds (process running for 530.147)
+2026-02-12 23:17:05 - Condition evaluation unchanged
+2026-02-12 23:18:03 - Restarting due to 29 class path changes (27 additions, 0 deletions, 2 modifications)
+2026-02-12 23:18:03 - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-12 23:18:03 - Graceful shutdown complete
+2026-02-12 23:18:03 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-12 23:18:03 - HikariPool-6 - Shutdown initiated...
+2026-02-12 23:18:04 - HikariPool-6 - Shutdown completed.
+2026-02-12 23:18:04 - Starting StudentEntryApplication using Java 21.0.6 with PID 87946 (/Users/karthikkb/Downloads/StudentsEntryApp/target/classes started by karthikkb in /Users/karthikkb/Downloads/StudentsEntryApp)
+2026-02-12 23:18:04 - No active profile set, falling back to 1 default profile: "default"
+2026-02-12 23:18:04 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-12 23:18:04 - Finished Spring Data repository scanning in 2 ms. Found 2 JPA repository interfaces.
+2026-02-12 23:18:04 - Tomcat initialized with port 8083 (http)
+2026-02-12 23:18:04 - Starting service [Tomcat]
+2026-02-12 23:18:04 - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2026-02-12 23:18:04 - Root WebApplicationContext: initialization completed in 73 ms
+2026-02-12 23:18:04 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-12 23:18:04 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-12 23:18:04 - HikariPool-7 - Starting...
+2026-02-12 23:18:04 - HikariPool-7 - Added connection org.postgresql.jdbc.PgConnection@6957af0c
+2026-02-12 23:18:04 - HikariPool-7 - Start completed.
+2026-02-12 23:18:04 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-12 23:18:05 - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://aws-1-ap-southeast-1.pooler.supabase.com:6543/postgres?sslmode=require]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.6
+	Default catalog/schema: postgres/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-12 23:18:05 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-12 23:18:05 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-12 23:18:05 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-12 23:18:05 - Found 2 UserDetailsService beans, with names [customUserDetailsService, userDetailsService]. Global Authentication Manager will not use a UserDetailsService for username/password login. Consider publishing a single UserDetailsService bean.
+2026-02-12 23:18:05 - Tomcat started on port 8083 (http) with context path '/'
+2026-02-12 23:18:05 - Started StudentEntryApplication in 1.354 seconds (process running for 590.209)
+2026-02-12 23:18:05 - Condition evaluation unchanged
+2026-02-12 23:18:51 - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2026-02-12 23:18:51 - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-12 23:18:51 - Graceful shutdown complete
+2026-02-12 23:18:51 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-12 23:18:52 - HikariPool-7 - Shutdown initiated...
+2026-02-12 23:18:52 - HikariPool-7 - Shutdown completed.
+2026-02-12 23:18:52 - Starting StudentEntryApplication using Java 21.0.6 with PID 87946 (/Users/karthikkb/Downloads/StudentsEntryApp/target/classes started by karthikkb in /Users/karthikkb/Downloads/StudentsEntryApp)
+2026-02-12 23:18:52 - No active profile set, falling back to 1 default profile: "default"
+2026-02-12 23:18:52 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-12 23:18:52 - Finished Spring Data repository scanning in 5 ms. Found 2 JPA repository interfaces.
+2026-02-12 23:18:52 - Tomcat initialized with port 8083 (http)
+2026-02-12 23:18:52 - Starting service [Tomcat]
+2026-02-12 23:18:52 - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2026-02-12 23:18:52 - Root WebApplicationContext: initialization completed in 109 ms
+2026-02-12 23:18:52 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-12 23:18:52 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-12 23:18:52 - HikariPool-8 - Starting...
+2026-02-12 23:18:53 - HikariPool-8 - Added connection org.postgresql.jdbc.PgConnection@69077625
+2026-02-12 23:18:53 - HikariPool-8 - Start completed.
+2026-02-12 23:18:53 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-12 23:18:53 - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://aws-1-ap-southeast-1.pooler.supabase.com:6543/postgres?sslmode=require]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.6
+	Default catalog/schema: postgres/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-12 23:18:53 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-12 23:18:53 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-12 23:18:53 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'usersController': Unsatisfied dependency expressed through field 'usersService': Error creating bean with name 'usersServiceImplementation': Unsatisfied dependency expressed through field 'passwordEncoder': No qualifying bean of type 'org.springframework.security.crypto.password.PasswordEncoder' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2026-02-12 23:18:53 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-12 23:18:53 - HikariPool-8 - Shutdown initiated...
+2026-02-12 23:18:54 - HikariPool-8 - Shutdown completed.
+2026-02-12 23:18:54 - Stopping service [Tomcat]
+2026-02-12 23:18:54 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-12 23:18:54 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field passwordEncoder in com.karthik.StudentEntryApp.service.UsersServiceImplementation required a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' in your configuration.
+
+2026-02-12 23:20:27 - Starting StudentEntryApplication using Java 21.0.6 with PID 87946 (/Users/karthikkb/Downloads/StudentsEntryApp/target/classes started by karthikkb in /Users/karthikkb/Downloads/StudentsEntryApp)
+2026-02-12 23:20:27 - No active profile set, falling back to 1 default profile: "default"
+2026-02-12 23:20:27 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-12 23:20:27 - Finished Spring Data repository scanning in 3 ms. Found 2 JPA repository interfaces.
+2026-02-12 23:20:27 - Tomcat initialized with port 8083 (http)
+2026-02-12 23:20:27 - Starting service [Tomcat]
+2026-02-12 23:20:27 - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2026-02-12 23:20:27 - Root WebApplicationContext: initialization completed in 77 ms
+2026-02-12 23:20:27 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-12 23:20:27 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-12 23:20:27 - HikariPool-9 - Starting...
+2026-02-12 23:20:28 - HikariPool-9 - Added connection org.postgresql.jdbc.PgConnection@3e9d8a1b
+2026-02-12 23:20:28 - HikariPool-9 - Start completed.
+2026-02-12 23:20:28 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-12 23:20:28 - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://aws-1-ap-southeast-1.pooler.supabase.com:6543/postgres?sslmode=require]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.6
+	Default catalog/schema: postgres/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-12 23:20:28 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-12 23:20:28 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-12 23:20:28 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'usersController': Unsatisfied dependency expressed through field 'usersService': Error creating bean with name 'usersServiceImplementation': Unsatisfied dependency expressed through field 'passwordEncoder': No qualifying bean of type 'org.springframework.security.crypto.password.PasswordEncoder' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2026-02-12 23:20:28 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-12 23:20:28 - HikariPool-9 - Shutdown initiated...
+2026-02-12 23:20:28 - HikariPool-9 - Shutdown completed.
+2026-02-12 23:20:28 - Stopping service [Tomcat]
+2026-02-12 23:20:28 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-12 23:20:28 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field passwordEncoder in com.karthik.StudentEntryApp.service.UsersServiceImplementation required a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' in your configuration.
+
+2026-02-12 23:20:51 - Starting StudentEntryApplication using Java 21.0.6 with PID 87946 (/Users/karthikkb/Downloads/StudentsEntryApp/target/classes started by karthikkb in /Users/karthikkb/Downloads/StudentsEntryApp)
+2026-02-12 23:20:51 - No active profile set, falling back to 1 default profile: "default"
+2026-02-12 23:20:51 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-12 23:20:51 - Finished Spring Data repository scanning in 2 ms. Found 2 JPA repository interfaces.
+2026-02-12 23:20:51 - Tomcat initialized with port 8083 (http)
+2026-02-12 23:20:51 - Starting service [Tomcat]
+2026-02-12 23:20:51 - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2026-02-12 23:20:51 - Root WebApplicationContext: initialization completed in 67 ms
+2026-02-12 23:20:51 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-12 23:20:51 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-12 23:20:51 - HikariPool-10 - Starting...
+2026-02-12 23:20:52 - HikariPool-10 - Added connection org.postgresql.jdbc.PgConnection@75f7f977
+2026-02-12 23:20:52 - HikariPool-10 - Start completed.
+2026-02-12 23:20:52 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-12 23:20:52 - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://aws-1-ap-southeast-1.pooler.supabase.com:6543/postgres?sslmode=require]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.6
+	Default catalog/schema: postgres/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-12 23:20:52 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-12 23:20:52 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-12 23:20:52 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'usersController': Unsatisfied dependency expressed through field 'usersService': Error creating bean with name 'usersServiceImplementation': Unsatisfied dependency expressed through field 'passwordEncoder': No qualifying bean of type 'org.springframework.security.crypto.password.PasswordEncoder' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2026-02-12 23:20:52 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-12 23:20:52 - HikariPool-10 - Shutdown initiated...
+2026-02-12 23:20:52 - HikariPool-10 - Shutdown completed.
+2026-02-12 23:20:52 - Stopping service [Tomcat]
+2026-02-12 23:20:52 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-12 23:20:52 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field passwordEncoder in com.karthik.StudentEntryApp.service.UsersServiceImplementation required a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' in your configuration.
+
+2026-02-12 23:21:52 - Starting StudentEntryApplication using Java 21.0.6 with PID 87946 (/Users/karthikkb/Downloads/StudentsEntryApp/target/classes started by karthikkb in /Users/karthikkb/Downloads/StudentsEntryApp)
+2026-02-12 23:21:52 - No active profile set, falling back to 1 default profile: "default"
+2026-02-12 23:21:52 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-12 23:21:52 - Finished Spring Data repository scanning in 4 ms. Found 2 JPA repository interfaces.
+2026-02-12 23:21:52 - Tomcat initialized with port 8083 (http)
+2026-02-12 23:21:52 - Starting service [Tomcat]
+2026-02-12 23:21:52 - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2026-02-12 23:21:52 - Root WebApplicationContext: initialization completed in 130 ms
+2026-02-12 23:21:52 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-12 23:21:52 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-12 23:21:52 - HikariPool-11 - Starting...
+2026-02-12 23:21:52 - HikariPool-11 - Added connection org.postgresql.jdbc.PgConnection@2c8e66ca
+2026-02-12 23:21:52 - HikariPool-11 - Start completed.
+2026-02-12 23:21:52 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-12 23:21:53 - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://aws-1-ap-southeast-1.pooler.supabase.com:6543/postgres?sslmode=require]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.6
+	Default catalog/schema: postgres/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-12 23:21:53 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-12 23:21:53 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-12 23:21:53 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-12 23:21:53 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-02-12 23:21:53 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-02-12 23:21:53 - Tomcat started on port 8083 (http) with context path '/'
+2026-02-12 23:21:53 - Started StudentEntryApplication in 1.449 seconds (process running for 818.116)
+2026-02-12 23:21:53 - Condition evaluation unchanged
+2026-02-12 23:22:19 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-12 23:22:19 - Initializing Servlet 'dispatcherServlet'
+2026-02-12 23:22:19 - Completed initialization in 1 ms
+2026-02-12 23:23:06 - Received request to register user: ahlks2bfak324
+2026-02-12 23:23:06 - Saving user: ahlks2bfak324

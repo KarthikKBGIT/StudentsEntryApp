@@ -6,13 +6,15 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
+import javax.swing.text.html.Option;
 import java.util.List;
+import java.util.Optional;
 
 @Repository
 public interface UsersRepository extends JpaRepository<UsersEntity, Long> {
     @Query(value = "select * from USERS_ENTITY where username = :username", nativeQuery = true)
-    public List<UsersEntity> findByUsername(@Param("username") String username);
+    public Optional<UsersEntity> findByUsername(@Param("username") String username);
 
     @Query(value = "select * from USERS_ENTITY where email =  :email", nativeQuery = true)
-    public List<UsersEntity> findByEmail(@Param("email") String email);
+    public Optional<UsersEntity> findByEmail(@Param("email") String email);
 }
