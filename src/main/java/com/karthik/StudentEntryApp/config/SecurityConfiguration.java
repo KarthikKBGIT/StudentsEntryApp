@@ -32,9 +32,9 @@ public class SecurityConfiguration {
     }
 
     @Bean
-    public UserDetailsService userDetailsService(){
-        UserDetails admin = User.withUsername("admin").password(passwordEncoder().encode(("admin123"))).roles("ADMIN").build();
-        UserDetails user = User.withUsername("user").password(passwordEncoder().encode(("user123"))).roles("USER").build();
+    public UserDetailsService userDetailsService(PasswordEncoder passwordEncoder){
+        UserDetails admin = User.withUsername("admin").password(passwordEncoder.encode(("admin123"))).roles("ADMIN").build();
+        UserDetails user = User.withUsername("user").password(passwordEncoder.encode(("user123"))).roles("USER").build();
         return new InMemoryUserDetailsManager(admin, user);
     }
 
