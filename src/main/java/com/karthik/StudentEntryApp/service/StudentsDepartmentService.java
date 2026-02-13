@@ -1,10 +1,7 @@
 package com.karthik.StudentEntryApp.service;
 
 import com.karthik.StudentEntryApp.entity.StudentsEntity;
-import com.karthik.StudentEntryApp.error.StudentDepartmentNotFound;
-import com.karthik.StudentEntryApp.error.StudentIDNotFound;
-import com.karthik.StudentEntryApp.error.StudentNameNotFound;
-import com.karthik.StudentEntryApp.error.StudentStateNotFound;
+import com.karthik.StudentEntryApp.error.*;
 import com.karthik.StudentEntryApp.repository.StudentsRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +10,9 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import javax.swing.text.html.Option;
+import java.time.Instant;
+import java.util.Date;
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
@@ -25,6 +25,7 @@ public class StudentsDepartmentService implements StudentsService {
 
     @Override
     public StudentsEntity saveStudent(StudentsEntity studentsEntity) {
+        studentsEntity.setCreated_at(Date.from(Instant.now()));
         return studentsRepository.save(studentsEntity);
     }
 
@@ -40,58 +41,65 @@ public class StudentsDepartmentService implements StudentsService {
     }
 
     @Override
-    public StudentsEntity fetchStudentById(Long id) throws StudentIDNotFound {
+    public StudentsEntity fetchStudentById(Long id) throws StudentNotFound {
 
         Optional<StudentsEntity> studentsEntity = studentsRepository.findById(id);
 
         if (studentsEntity.isEmpty()) {
-            throw new StudentIDNotFound(String.format("Student ID: %s Not Found", id));
+            throw new StudentNotFound(String.format("Student with ID: %s Not Found", id));
         }
         return studentsEntity.get();
     }
 
     @Override
-    public List<StudentsEntity> fetchStudentsByName(String name) throws StudentNameNotFound {
-        log.info("Fetching details for name: " + name);
-        List<StudentsEntity> studentsEntities = studentsRepository.fetchStudentsByName(name);
+    public List<StudentsEntity> fetchStudentsByFirstName(String firstName) throws StudentNameNotFound, StudentNotFound {
+        log.info("Fetching details for student's first name: " + firstName);
+        List<StudentsEntity> studentsEntities = studentsRepository.fetchStudentsByFirstName(firstName);
         if (studentsEntities.isEmpty()) {
-            log.info("No records found for the name: " + name);
-            if (name == null || name.isEmpty()) {
+            log.info("No records found for the name: " + firstName);
+            if (firstName == null || firstName.isEmpty()) {
                 throw new StudentNameNotFound("Student Name on header is empty");
             }
-            throw new StudentNameNotFound(String.format("Student Name: %s Not Found", name));
+            throw new StudentNotFound(String.format("Student with First Name: %s Not Found", firstName));
         }
         return studentsEntities;
     }
 
     @Override
-    public List<StudentsEntity> fetchStudentsByDepartment(String departmentName) throws StudentDepartmentNotFound {
-        log.info("Fetching details for department: " + departmentName);
-        List<StudentsEntity> studentsEntities = studentsRepository.fetchStudentsByDepartment(departmentName);
-        if (studentsEntities.isEmpty()) {
-            log.debug("No records found for the department: " + departmentName);
-            if (departmentName == null || departmentName.isEmpty()) {
-                throw new StudentDepartmentNotFound("Student Department name on header is empty");
+    public List<StudentsEntity> fetchStudentsByLastName(String last_name) throws StudentNameNotFound, StudentNotFound {
+        List<StudentsEntity> studentsEntities = studentsRepository.fetchStudentsByLastName(last_name);
+        if(studentsEntities.isEmpty()){
+            if(last_name==null || last_name.isEmpty()){
+                throw new StudentNameNotFound("Student Name on header is empty");
             }
-            throw new StudentDepartmentNotFound("Student Department: " + departmentName + " Not Found");
+            throw new StudentNotFound("Student with Last Name: " + last_name + " Not Found");
         }
         return studentsEntities;
     }
 
     @Override
-    public List<StudentsEntity> fetchStudentsByState(String state) throws StudentStateNotFound {
-        log.info("Fetching details for state: " + state);
-        List<StudentsEntity> studentsEntities = studentsRepository.fetchStudentsByState(state);
-        if (studentsEntities.isEmpty()) {
-            log.info("No records found for the state: " + state);
-            if (state == null || state.isEmpty()) {
-                throw new StudentStateNotFound("Student State name on header is empty");
+    public List<StudentsEntity> fetchByEmailId(String email) throws StudentEmailNotFound, StudentNotFound {
+        List<StudentsEntity> studentsEntity = studentsRepository.fetchStudentsByEmail(email);
+        if(studentsEntity.isEmpty()){
+            if(email==null || email.isEmpty()){
+                throw new StudentEmailNotFound("Student Email on header is empty");
             }
-            throw new StudentStateNotFound("Student State: " + state + " Not Found");
+            throw new StudentNotFound(String.format("Student with Email: %s Not Found in Database", email));
+        }
+        return studentsEntity;
+    }
+
+    @Override
+    public List<StudentsEntity> fetchByGender(String gender) throws InvalidGender, StudentNotFound {
+        List<StudentsEntity> studentsEntities = studentsRepository.fetchStudentsByGender(gender);
+        if(studentsEntities.isEmpty()){
+            if(gender==null || gender.isEmpty()){
+                throw new InvalidGender("Gender on header is empty");
+            }
+            throw new StudentNotFound("Student with Gender: " + gender + " Not Found in Database");
         }
         return studentsEntities;
     }
-
 
     @Override
     public void deleteStudentById(Long id) throws StudentIDNotFound {
@@ -103,28 +111,41 @@ public class StudentsDepartmentService implements StudentsService {
     }
 
     @Override
-    public StudentsEntity updateStudentById(Long id, StudentsEntity studentsEntityRequest) throws StudentIDNotFound {
+    public StudentsEntity updateStudentById(Long id, StudentsEntity studentsEntityRequest) throws StudentNotFound, StudentIDNotFound, StudentNameNotFound {
         Optional<StudentsEntity> studentsEntity = studentsRepository.findById(id);
-        if (studentsEntity.isEmpty()) {
-            log.info("No records found for the ID: " + id);
-            throw new StudentIDNotFound("Student ID: " + id + " Not Found");
+        if(studentsEntity.isEmpty()){
+            if(id==null){
+                throw new StudentIDNotFound("Student ID on header is empty");
+            }
+            throw new StudentNotFound("Student with ID: " + id + " Not Found");
         }
-        StudentsEntity studentsEntity1 = studentsEntity.get();
-        if (Objects.nonNull(studentsEntity1.getName()) &&
-                !studentsEntityRequest.getName().isEmpty()) {
-            studentsEntity1.setName(studentsEntityRequest.getName());
+        StudentsEntity studentEntityToUpdate = studentsEntity.get();
+        if(!studentsEntityRequest.getFirstname().isEmpty() && !Objects.equals(studentEntityToUpdate.getFirstname(), studentsEntityRequest.getFirstname())){
+            studentEntityToUpdate.setLastname(studentsEntityRequest.getFirstname());
         }
-
-        if (Objects.nonNull(studentsEntity1.getDepartment()) &&
-                !studentsEntityRequest.getDepartment().isEmpty()) {
-            studentsEntity1.setDepartment(studentsEntityRequest.getDepartment());
+        if(!studentsEntityRequest.getLastname().isEmpty() && !Objects.equals(studentEntityToUpdate.getLastname(), studentsEntityRequest.getLastname())){
+            studentEntityToUpdate.setLastname(studentsEntityRequest.getLastname());
         }
-
-        if (Objects.nonNull(studentsEntity1.getState()) &&
-                !studentsEntityRequest.getState().isEmpty()) {
-            studentsEntity1.setState(studentsEntityRequest.getState());
+        if(!studentsEntityRequest.getGender().isEmpty() && !Objects.equals(studentEntityToUpdate.getGender(), studentsEntityRequest.getGender())){
+            studentEntityToUpdate.setGender(studentsEntityRequest.getGender());
         }
-        return studentsRepository.save(studentsEntity1);
+        if(!studentsEntityRequest.getEmail().isEmpty() && !Objects.equals(studentEntityToUpdate.getEmail(), studentsEntityRequest.getEmail())){
+            studentEntityToUpdate.setEmail(studentsEntityRequest.getEmail());
+        }
+        if(!studentsEntityRequest.getDob().toString().isEmpty() && !Objects.equals(studentEntityToUpdate.getDob(), studentsEntityRequest.getDob())){
+            studentEntityToUpdate.setDob(studentsEntityRequest.getDob());
+        }
+        if(!studentsEntityRequest.getPhoneNumber().toString().isEmpty() && !Objects.equals(studentEntityToUpdate.getPhoneNumber(), studentsEntityRequest.getPhoneNumber())){
+            studentEntityToUpdate.setPhoneNumber(studentsEntityRequest.getPhoneNumber());
+        }
+        if(!studentsEntityRequest.getAddress().isEmpty() && !Objects.equals(studentEntityToUpdate.getAddress(), studentsEntityRequest.getAddress())){
+            studentEntityToUpdate.setAddress(studentsEntityRequest.getAddress());
+        }
+        if(!studentsEntityRequest.getEnrollmentDate().toString().isEmpty() && !Objects.equals(studentEntityToUpdate.getEnrollmentDate(), studentsEntityRequest.getEnrollmentDate())){
+            studentEntityToUpdate.setEnrollmentDate(studentsEntityRequest.getEnrollmentDate());
+        }
+        studentEntityToUpdate.setUpdated_at(Date.from(Instant.now()));
+        return studentsRepository.save(studentEntityToUpdate);
     }
 
 }

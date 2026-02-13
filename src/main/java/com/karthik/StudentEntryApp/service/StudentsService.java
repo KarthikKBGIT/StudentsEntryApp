@@ -1,10 +1,7 @@
 package com.karthik.StudentEntryApp.service;
 
 import com.karthik.StudentEntryApp.entity.StudentsEntity;
-import com.karthik.StudentEntryApp.error.StudentDepartmentNotFound;
-import com.karthik.StudentEntryApp.error.StudentIDNotFound;
-import com.karthik.StudentEntryApp.error.StudentNameNotFound;
-import com.karthik.StudentEntryApp.error.StudentStateNotFound;
+import com.karthik.StudentEntryApp.error.*;
 import org.springframework.data.domain.Page;
 
 import java.util.List;
@@ -17,16 +14,18 @@ public interface StudentsService {
 
     public Page<StudentsEntity> fetchStudentsWithPagination(int page, int size);
 
-    public StudentsEntity fetchStudentById(Long id) throws StudentIDNotFound;
+    public StudentsEntity fetchStudentById(Long id) throws StudentNotFound;
 
-    public List<StudentsEntity> fetchStudentsByName(String name) throws StudentNameNotFound;
+    public List<StudentsEntity> fetchStudentsByFirstName(String first_name) throws StudentNameNotFound, StudentNotFound;
 
-    public List<StudentsEntity> fetchStudentsByDepartment(String departmentName) throws StudentNameNotFound, StudentDepartmentNotFound;
+    public List<StudentsEntity> fetchStudentsByLastName(String last_name) throws StudentNameNotFound, StudentNotFound;
 
-    public List<StudentsEntity> fetchStudentsByState(String state) throws StudentStateNotFound;
+    public List<StudentsEntity> fetchByEmailId(String email) throws StudentEmailNotFound, StudentNotFound;
 
-    public void deleteStudentById(Long id) throws StudentIDNotFound;
+    public List<StudentsEntity> fetchByGender(String gender) throws InvalidGender, StudentNotFound;
 
-    public StudentsEntity updateStudentById(Long id, StudentsEntity studentsEntity) throws StudentIDNotFound;
+    public void deleteStudentById(Long id) throws StudentIDNotFound, StudentNotFound;
+
+    public StudentsEntity updateStudentById(Long id, StudentsEntity studentsEntity) throws StudentIDNotFound, StudentNotFound, StudentNameNotFound;
 
 }

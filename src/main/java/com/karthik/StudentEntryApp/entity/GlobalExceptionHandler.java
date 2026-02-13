@@ -13,6 +13,12 @@ import java.util.stream.Collectors;
 @RestControllerAdvice
 public class GlobalExceptionHandler {
 
+    @ExceptionHandler(StudentNotFound.class)
+    public ResponseEntity<ErrorMessage> studentNotFoundExceptionHandler(StudentNotFound e) {
+        ErrorMessage errorMessage = new ErrorMessage(HttpStatus.NOT_FOUND.value(), HttpStatus.NOT_FOUND.getReasonPhrase());
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(errorMessage);
+    }
+
     @ExceptionHandler(StudentIDNotFound.class)
     public ResponseEntity<ErrorMessage> studentIDNotFoundExceptionHandler(StudentIDNotFound e) {
         ErrorMessage message = new ErrorMessage(HttpStatus.NOT_FOUND.value(), e.getMessage());
@@ -21,18 +27,6 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(StudentNameNotFound.class)
     public ResponseEntity<ErrorMessage> studentNameNotFoundExceptionHandler(StudentNameNotFound e) {
-        ErrorMessage message = new ErrorMessage(HttpStatus.NOT_FOUND.value(), e.getMessage());
-        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(message);
-    }
-
-    @ExceptionHandler(StudentDepartmentNotFound.class)
-    public ResponseEntity<ErrorMessage> studentDepartmentNotFoundExceptionHandler(StudentDepartmentNotFound e) {
-        ErrorMessage message = new ErrorMessage(HttpStatus.NOT_FOUND.value(), e.getMessage());
-        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(message);
-    }
-
-    @ExceptionHandler(StudentStateNotFound.class)
-    public ResponseEntity<ErrorMessage> studentStateNotFoundExceptionHandler(StudentStateNotFound e) {
         ErrorMessage message = new ErrorMessage(HttpStatus.NOT_FOUND.value(), e.getMessage());
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body(message);
     }
