@@ -28,10 +28,10 @@ public class UsersServiceImplementation implements UsersService {
         log.info("Saving user: " + usersEntity.getUsername());
         Optional<UsersEntity> usersResultwithSameUsername = usersRepository.findByUsername(usersEntity.getUsername());
         Optional<UsersEntity> usersResultwithSameEmail = usersRepository.findByEmail(usersEntity.getEmail());
-        if(!usersResultwithSameUsername.isEmpty()){
+        if (!usersResultwithSameUsername.isEmpty()) {
             throw new UsernameAlreadyExists("Username already exists: " + usersEntity.getUsername());
         }
-        if(!usersResultwithSameEmail.isEmpty()) {
+        if (!usersResultwithSameEmail.isEmpty()) {
             throw new EmailAlreadyExists("Email already exists: " + usersEntity.getEmail());
         }
         usersEntity.setPassword(passwordEncoder.encode(usersEntity.getPassword()));

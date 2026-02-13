@@ -23,7 +23,7 @@ import org.springframework.security.web.SecurityFilterChain;
 public class SecurityConfiguration {
 
     @Bean
-    public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity){
+    public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) {
         return httpSecurity.csrf(customizer -> customizer.disable())
                 .authorizeHttpRequests(auth ->
                         auth.requestMatchers(HttpMethod.POST, "/register").permitAll().
@@ -35,7 +35,7 @@ public class SecurityConfiguration {
     }
 
     @Bean
-    public UserDetailsService userDetailsService(){
+    public UserDetailsService userDetailsService() {
 //        UserDetails admin = User.withUsername("admin").password(passwordEncoder.encode(("admin123"))).roles("ADMIN").build();
 //        UserDetails user = User.withUsername("user").password(passwordEncoder.encode(("user123"))).roles("USER").build();
 //        return new InMemoryUserDetailsManager(admin, user);
@@ -44,14 +44,14 @@ public class SecurityConfiguration {
     }
 
     @Bean
-    public DaoAuthenticationProvider authenticationProvider(){
+    public DaoAuthenticationProvider authenticationProvider() {
         DaoAuthenticationProvider daoAuthenticationProvider = new DaoAuthenticationProvider(userDetailsService());
         daoAuthenticationProvider.setPasswordEncoder(passwordEncoder());
         return daoAuthenticationProvider;
     }
 
     @Bean
-    public PasswordEncoder passwordEncoder(){
+    public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
 

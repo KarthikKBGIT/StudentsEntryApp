@@ -13,45 +13,45 @@ import java.util.stream.Collectors;
 public class GlobalExceptionHandler {
 
     @ExceptionHandler(StudentIDNotFound.class)
-    public ResponseEntity<ErrorMessage> studentIDNotFoundExceptionHandler(Exception e){
+    public ResponseEntity<ErrorMessage> studentIDNotFoundExceptionHandler(Exception e) {
         ErrorMessage message = new ErrorMessage(HttpStatus.NOT_FOUND.value(), e.getMessage());
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body(message);
     }
 
     @ExceptionHandler(StudentNameNotFound.class)
-    public ResponseEntity<ErrorMessage> studentNameNotFoundExceptionHandler(Exception e){
+    public ResponseEntity<ErrorMessage> studentNameNotFoundExceptionHandler(Exception e) {
         ErrorMessage message = new ErrorMessage(HttpStatus.NOT_FOUND.value(), e.getMessage());
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body(message);
     }
 
     @ExceptionHandler(StudentDepartmentNotFound.class)
-    public ResponseEntity<ErrorMessage> studentDepartmentNotFoundExceptionHandler(Exception e){
+    public ResponseEntity<ErrorMessage> studentDepartmentNotFoundExceptionHandler(Exception e) {
         ErrorMessage message = new ErrorMessage(HttpStatus.NOT_FOUND.value(), e.getMessage());
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body(message);
     }
 
     @ExceptionHandler(StudentStateNotFound.class)
-    public ResponseEntity<ErrorMessage> studentStateNotFoundExceptionHandler(Exception e){
+    public ResponseEntity<ErrorMessage> studentStateNotFoundExceptionHandler(Exception e) {
         ErrorMessage message = new ErrorMessage(HttpStatus.NOT_FOUND.value(), e.getMessage());
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body(message);
     }
 
     @ExceptionHandler(MethodArgumentNotValidException.class)
-    public ResponseEntity<ErrorMessage> methodArgumentsValidationExceptionHandler(MethodArgumentNotValidException e){
+    public ResponseEntity<ErrorMessage> methodArgumentsValidationExceptionHandler(MethodArgumentNotValidException e) {
         ErrorMessage message = new ErrorMessage(HttpStatus.BAD_REQUEST.value(),
                 e.getBindingResult()
-                .getFieldErrors().stream().map((error) -> error.getDefaultMessage()).collect(Collectors.joining(",")));
+                        .getFieldErrors().stream().map((error) -> error.getDefaultMessage()).collect(Collectors.joining(",")));
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(message);
     }
 
     @ExceptionHandler(UsernameAlreadyExists.class)
-    public ResponseEntity<ErrorMessage> usernameAlreadyExistsExceptionHandler(Exception e){
+    public ResponseEntity<ErrorMessage> usernameAlreadyExistsExceptionHandler(Exception e) {
         ErrorMessage message = new ErrorMessage(HttpStatus.CONFLICT.value(), e.getMessage());
         return ResponseEntity.status(HttpStatus.CONFLICT).body(message);
     }
 
     @ExceptionHandler(EmailAlreadyExists.class)
-    public ResponseEntity<ErrorMessage> emailAlreadyExistsExceptionHandler(Exception e){
+    public ResponseEntity<ErrorMessage> emailAlreadyExistsExceptionHandler(Exception e) {
         ErrorMessage message = new ErrorMessage(HttpStatus.CONFLICT.value(), e.getMessage());
         return ResponseEntity.status(HttpStatus.CONFLICT).body(message);
     }

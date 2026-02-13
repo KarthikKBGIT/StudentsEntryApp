@@ -36,7 +36,7 @@ public class StudentsController {
     }
 
     @RequestMapping(value = "/students/page", method = RequestMethod.GET)
-    public Page<StudentsEntity> fetchAllStudentsWithPagination(@RequestParam int page, @RequestParam int size){
+    public Page<StudentsEntity> fetchAllStudentsWithPagination(@RequestParam int page, @RequestParam int size) {
         log.info("Received request to fetch students with pagination - Page: " + page + ", Size: " + size);
         return studentsService.fetchStudentsWithPagination(page, size);
     }
@@ -80,7 +80,7 @@ public class StudentsController {
     }
 
     //This is method is only for
-    @RequestMapping(value ="/csrf-token", method = RequestMethod.GET)
+    @RequestMapping(value = "/csrf-token", method = RequestMethod.GET)
     public CsrfToken getCsrfToken(HttpServletRequest httpServletRequest) {
         return (CsrfToken) httpServletRequest.getAttribute("_csrf");
     }

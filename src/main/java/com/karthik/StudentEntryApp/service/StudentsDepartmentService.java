@@ -19,7 +19,7 @@ import java.util.Optional;
 
 @Slf4j
 @Service
-public class StudentsDepartmentService implements StudentsService{
+public class StudentsDepartmentService implements StudentsService {
     @Autowired
     private StudentsRepository studentsRepository;
 
@@ -42,9 +42,9 @@ public class StudentsDepartmentService implements StudentsService{
     @Override
     public StudentsEntity fetchStudentById(Long id) throws StudentIDNotFound {
 
-        Optional<StudentsEntity>  studentsEntity = studentsRepository.findById(id);
+        Optional<StudentsEntity> studentsEntity = studentsRepository.findById(id);
 
-        if(studentsEntity.isEmpty()){
+        if (studentsEntity.isEmpty()) {
             throw new StudentIDNotFound(String.format("Student ID: %s Not Found", id));
         }
         return studentsEntity.get();
@@ -54,9 +54,9 @@ public class StudentsDepartmentService implements StudentsService{
     public List<StudentsEntity> fetchStudentsByName(String name) throws StudentNameNotFound {
         log.info("Fetching details for name: " + name);
         List<StudentsEntity> studentsEntities = studentsRepository.fetchStudentsByName(name);
-        if(studentsEntities.isEmpty()){
+        if (studentsEntities.isEmpty()) {
             log.info("No records found for the name: " + name);
-            if(name == null || name.isEmpty()){
+            if (name == null || name.isEmpty()) {
                 throw new StudentNameNotFound("Student Name on header is empty");
             }
             throw new StudentNameNotFound(String.format("Student Name: %s Not Found", name));
@@ -68,9 +68,9 @@ public class StudentsDepartmentService implements StudentsService{
     public List<StudentsEntity> fetchStudentsByDepartment(String departmentName) throws StudentDepartmentNotFound {
         log.info("Fetching details for department: " + departmentName);
         List<StudentsEntity> studentsEntities = studentsRepository.fetchStudentsByDepartment(departmentName);
-        if(studentsEntities.isEmpty()){
+        if (studentsEntities.isEmpty()) {
             log.debug("No records found for the department: " + departmentName);
-            if(departmentName == null || departmentName.isEmpty()){
+            if (departmentName == null || departmentName.isEmpty()) {
                 throw new StudentDepartmentNotFound("Student Department name on header is empty");
             }
             throw new StudentDepartmentNotFound("Student Department: " + departmentName + " Not Found");
@@ -82,9 +82,9 @@ public class StudentsDepartmentService implements StudentsService{
     public List<StudentsEntity> fetchStudentsByState(String state) throws StudentStateNotFound {
         log.info("Fetching details for state: " + state);
         List<StudentsEntity> studentsEntities = studentsRepository.fetchStudentsByState(state);
-        if(studentsEntities.isEmpty()){
+        if (studentsEntities.isEmpty()) {
             log.info("No records found for the state: " + state);
-            if(state == null || state.isEmpty()){
+            if (state == null || state.isEmpty()) {
                 throw new StudentStateNotFound("Student State name on header is empty");
             }
             throw new StudentStateNotFound("Student State: " + state + " Not Found");
@@ -95,7 +95,7 @@ public class StudentsDepartmentService implements StudentsService{
 
     @Override
     public void deleteStudentById(Long id) throws StudentIDNotFound {
-        if(studentsRepository.findById(id).isEmpty()){
+        if (studentsRepository.findById(id).isEmpty()) {
             log.info("No records found for the ID: " + id);
             throw new StudentIDNotFound(String.format("Student ID: %s Not Found", id));
         }
@@ -104,24 +104,24 @@ public class StudentsDepartmentService implements StudentsService{
 
     @Override
     public StudentsEntity updateStudentById(Long id, StudentsEntity studentsEntityRequest) throws StudentIDNotFound {
-        Optional<StudentsEntity> studentsEntity =  studentsRepository.findById(id);
-        if(studentsEntity.isEmpty()){
+        Optional<StudentsEntity> studentsEntity = studentsRepository.findById(id);
+        if (studentsEntity.isEmpty()) {
             log.info("No records found for the ID: " + id);
             throw new StudentIDNotFound("Student ID: " + id + " Not Found");
         }
         StudentsEntity studentsEntity1 = studentsEntity.get();
-        if(Objects.nonNull(studentsEntity1.getName()) &&
-        !studentsEntityRequest.getName().isEmpty()){
+        if (Objects.nonNull(studentsEntity1.getName()) &&
+                !studentsEntityRequest.getName().isEmpty()) {
             studentsEntity1.setName(studentsEntityRequest.getName());
         }
 
-        if(Objects.nonNull(studentsEntity1.getDepartment()) &&
-                !studentsEntityRequest.getDepartment().isEmpty()){
+        if (Objects.nonNull(studentsEntity1.getDepartment()) &&
+                !studentsEntityRequest.getDepartment().isEmpty()) {
             studentsEntity1.setDepartment(studentsEntityRequest.getDepartment());
         }
 
-        if(Objects.nonNull(studentsEntity1.getState()) &&
-                !studentsEntityRequest.getState().isEmpty()){
+        if (Objects.nonNull(studentsEntity1.getState()) &&
+                !studentsEntityRequest.getState().isEmpty()) {
             studentsEntity1.setState(studentsEntityRequest.getState());
         }
         return studentsRepository.save(studentsEntity1);
