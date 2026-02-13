@@ -1,0 +1,91 @@
+StudentEntryApplication - Structured Plan
+
+Database Tables and Columns
+
+a) Users Table (for authentication and authorization)
+Column Name	    Type	        Description
+id	            Long (PK)	    Unique identifier
+username	    String	        Unique username
+email	        String	        Unique email
+password	    String	        Encrypted password (BCrypt)
+role	        String	        Role (e.g., USER, ADMIN)
+created_at	    Timestamp	    Account creation timestamp
+updated_at	    Timestamp	    Last update timestamp
+
+b) Students Table
+Column Name	    Type	        Description
+id	            Long (PK)	    Unique student ID
+first_name	    String	        Student's first name
+last_name	    String	        Student's last name
+email	        String	        Student's email (unique)
+date_of_birth   Date	    Student's date of birth
+gender	        String	        Gender (optional)
+phone_number	String	    Contact number
+address	        String	        Address details
+enrollment_date	Date	    Date of enrollment
+created_at	    Timestamp	    Record creation timestamp
+updated_at	    Timestamp	    Record last updated timestamp
+
+Suggested REST APIs
+
+User APIs
+HTTP Method	Endpoint	Description
+POST	        /api/register	Register a new user
+POST	        /api/login	Authenticate user (if not form login)
+GET	        /api/users/{id}	Get user details (admin only)
+PUT	        /api/users/{id}	Update user details (admin or self)
+DELETE	        /api/users/{id}	Delete user (admin only)
+
+Student APIs
+HTTP Method	Endpoint	Description
+POST	        /api/students	Create a new student record
+GET	        /api/students	Get list of students (with pagination and filtering)
+GET	        /api/students/{id}	Get student details by ID
+PUT	        /api/students/{id}	Update student details
+DELETE	        /api/students/{id}	Delete student record
+
+Other APIs
+HTTP Method	Endpoint	Description
+GET	        /api/health	Health check endpoint
+GET	        /api/test	Public test endpoint
+
+Suggested Tasks (Step-by-step)
+
+Task 1: Setup Project and Basic Entities
+	- Create Spring Boot project with dependencies (Spring Web, Spring Data JPA, Spring Security, H2/MySQL).
+	- Define UsersEntity and StudentsEntity with fields above.
+	- Setup database connection and JPA repositories.
+
+Task 2: User Registration and Authentication
+	- Implement /api/register endpoint with validation and password encryption (BCrypt).
+	- Configure Spring Security to allow registration without authentication.
+	- Setup login (form login or JWT).
+	- Implement CustomUserDetailsService to load users from DB.
+
+Task 3: Student CRUD APIs
+	- Implement CRUD endpoints for students with service and repository layers.
+	- Add validation for student input data.
+	- Secure endpoints so only authenticated users can access.
+
+Task 4: Pagination, Sorting, and Filtering for Students
+	- Add pagination and sorting support on GET /api/students.
+	- Add filtering by name, enrollment date, etc.
+
+Task 5: Role-based Access Control
+	- Define roles (USER, ADMIN).
+	- Restrict certain APIs (e.g., delete student) to ADMIN role only.
+
+Task 6: Exception Handling and Validation
+	- Implement global exception handler for consistent error responses.
+	- Handle common exceptions like ResourceNotFound, DuplicateEmail, etc.
+
+Task 7: Logging and Monitoring
+	- Add logging for important events (user registration, student creation).
+	- Add actuator endpoints for health and metrics.
+
+Task 8: Testing
+	- Write unit tests for services and controllers.
+	- Write integration tests for APIs and security.
+
+Task 9: Frontend Integration (Optional)
+	- Create simple UI using Thymeleaf or React/Angular to interact with APIs.
