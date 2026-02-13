@@ -4,7 +4,7 @@ import com.karthik.StudentEntryApp.entity.StudentsEntity;
 import com.karthik.StudentEntryApp.error.StudentIDNotFound;
 import com.karthik.StudentEntryApp.error.StudentNameNotFound;
 import com.karthik.StudentEntryApp.error.StudentNotFound;
-import com.karthik.StudentEntryApp.service.StudentsDepartmentService;
+import com.karthik.StudentEntryApp.service.StudentsService;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
@@ -20,7 +20,7 @@ import java.util.List;
 public class StudentsController {
 
     @Autowired
-    StudentsDepartmentService studentsService;
+    StudentsService studentsService;
 
     @RequestMapping(value = "/students", method = RequestMethod.POST)
     public StudentsEntity saveStudent(@Valid @RequestBody StudentsEntity studentsEntity) {
