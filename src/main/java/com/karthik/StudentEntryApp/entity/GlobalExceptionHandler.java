@@ -6,6 +6,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
+import tools.jackson.databind.exc.IgnoredPropertyException;
 
 import java.util.stream.Collectors;
 
@@ -13,25 +14,25 @@ import java.util.stream.Collectors;
 public class GlobalExceptionHandler {
 
     @ExceptionHandler(StudentIDNotFound.class)
-    public ResponseEntity<ErrorMessage> studentIDNotFoundExceptionHandler(Exception e) {
+    public ResponseEntity<ErrorMessage> studentIDNotFoundExceptionHandler(StudentIDNotFound e) {
         ErrorMessage message = new ErrorMessage(HttpStatus.NOT_FOUND.value(), e.getMessage());
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body(message);
     }
 
     @ExceptionHandler(StudentNameNotFound.class)
-    public ResponseEntity<ErrorMessage> studentNameNotFoundExceptionHandler(Exception e) {
+    public ResponseEntity<ErrorMessage> studentNameNotFoundExceptionHandler(StudentNameNotFound e) {
         ErrorMessage message = new ErrorMessage(HttpStatus.NOT_FOUND.value(), e.getMessage());
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body(message);
     }
 
     @ExceptionHandler(StudentDepartmentNotFound.class)
-    public ResponseEntity<ErrorMessage> studentDepartmentNotFoundExceptionHandler(Exception e) {
+    public ResponseEntity<ErrorMessage> studentDepartmentNotFoundExceptionHandler(StudentDepartmentNotFound e) {
         ErrorMessage message = new ErrorMessage(HttpStatus.NOT_FOUND.value(), e.getMessage());
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body(message);
     }
 
     @ExceptionHandler(StudentStateNotFound.class)
-    public ResponseEntity<ErrorMessage> studentStateNotFoundExceptionHandler(Exception e) {
+    public ResponseEntity<ErrorMessage> studentStateNotFoundExceptionHandler(StudentStateNotFound e) {
         ErrorMessage message = new ErrorMessage(HttpStatus.NOT_FOUND.value(), e.getMessage());
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body(message);
     }
@@ -45,15 +46,21 @@ public class GlobalExceptionHandler {
     }
 
     @ExceptionHandler(UsernameAlreadyExists.class)
-    public ResponseEntity<ErrorMessage> usernameAlreadyExistsExceptionHandler(Exception e) {
+    public ResponseEntity<ErrorMessage> usernameAlreadyExistsExceptionHandler(UsernameAlreadyExists e) {
         ErrorMessage message = new ErrorMessage(HttpStatus.CONFLICT.value(), e.getMessage());
         return ResponseEntity.status(HttpStatus.CONFLICT).body(message);
     }
 
     @ExceptionHandler(EmailAlreadyExists.class)
-    public ResponseEntity<ErrorMessage> emailAlreadyExistsExceptionHandler(Exception e) {
+    public ResponseEntity<ErrorMessage> emailAlreadyExistsExceptionHandler(EmailAlreadyExists e) {
         ErrorMessage message = new ErrorMessage(HttpStatus.CONFLICT.value(), e.getMessage());
         return ResponseEntity.status(HttpStatus.CONFLICT).body(message);
+    }
+
+    @ExceptionHandler(IgnoredPropertyException.class)
+    public ResponseEntity<ErrorMessage> ignoredPropertiesExceptionHandler(IgnoredPropertyException e) {
+        ErrorMessage message = new ErrorMessage(HttpStatus.BAD_REQUEST.value(), "The filed " + e.getPropertyName() + " is read-only and cannot be included in the request body.");
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(message);
     }
 
 }
