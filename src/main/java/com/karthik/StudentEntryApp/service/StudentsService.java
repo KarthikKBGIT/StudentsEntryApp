@@ -120,28 +120,28 @@ public class StudentsService implements BaseService {
             throw new StudentNotFound("Student with ID: " + id + " Not Found");
         }
         StudentsEntity studentEntityToUpdate = studentsEntity.get();
-        if(!studentsEntityRequest.getFirstname().isEmpty() && !Objects.equals(studentEntityToUpdate.getFirstname(), studentsEntityRequest.getFirstname())){
+        if(studentsEntityRequest.getFirstname() != null && !studentsEntityRequest.getFirstname().isEmpty() && !Objects.equals(studentEntityToUpdate.getFirstname(), studentsEntityRequest.getFirstname())){
             studentEntityToUpdate.setLastname(studentsEntityRequest.getFirstname());
         }
-        if(!studentsEntityRequest.getLastname().isEmpty() && !Objects.equals(studentEntityToUpdate.getLastname(), studentsEntityRequest.getLastname())){
+        if(studentsEntityRequest.getLastname() != null && !studentsEntityRequest.getLastname().isEmpty() && !Objects.equals(studentEntityToUpdate.getLastname(), studentsEntityRequest.getLastname())){
             studentEntityToUpdate.setLastname(studentsEntityRequest.getLastname());
         }
-        if(!studentsEntityRequest.getGender().isEmpty() && !Objects.equals(studentEntityToUpdate.getGender(), studentsEntityRequest.getGender())){
+        if(studentsEntityRequest.getGender() != null && !studentsEntityRequest.getGender().isEmpty() && !Objects.equals(studentEntityToUpdate.getGender(), studentsEntityRequest.getGender())){
             studentEntityToUpdate.setGender(studentsEntityRequest.getGender());
         }
-        if(!studentsEntityRequest.getEmail().isEmpty() && !Objects.equals(studentEntityToUpdate.getEmail(), studentsEntityRequest.getEmail())){
+        if(studentsEntityRequest.getEmail() != null && !studentsEntityRequest.getEmail().isEmpty() && !Objects.equals(studentEntityToUpdate.getEmail(), studentsEntityRequest.getEmail())){
             studentEntityToUpdate.setEmail(studentsEntityRequest.getEmail());
         }
-        if(!studentsEntityRequest.getDob().toString().isEmpty() && !Objects.equals(studentEntityToUpdate.getDob(), studentsEntityRequest.getDob())){
+        if(studentsEntityRequest.getDob() != null && !studentsEntityRequest.getDob().toString().isEmpty() && !Objects.equals(studentEntityToUpdate.getDob(), studentsEntityRequest.getDob())){
             studentEntityToUpdate.setDob(studentsEntityRequest.getDob());
         }
-        if(!studentsEntityRequest.getPhoneNumber().toString().isEmpty() && !Objects.equals(studentEntityToUpdate.getPhoneNumber(), studentsEntityRequest.getPhoneNumber())){
+        if(studentsEntityRequest.getPhoneNumber() != null &&!studentsEntityRequest.getPhoneNumber().toString().isEmpty() && !Objects.equals(studentEntityToUpdate.getPhoneNumber(), studentsEntityRequest.getPhoneNumber())){
             studentEntityToUpdate.setPhoneNumber(studentsEntityRequest.getPhoneNumber());
         }
-        if(!studentsEntityRequest.getAddress().isEmpty() && !Objects.equals(studentEntityToUpdate.getAddress(), studentsEntityRequest.getAddress())){
+        if(studentsEntityRequest.getAddress() != null && !studentsEntityRequest.getAddress().isEmpty() && !Objects.equals(studentEntityToUpdate.getAddress(), studentsEntityRequest.getAddress())){
             studentEntityToUpdate.setAddress(studentsEntityRequest.getAddress());
         }
-        if(!studentsEntityRequest.getEnrollmentDate().toString().isEmpty() && !Objects.equals(studentEntityToUpdate.getEnrollmentDate(), studentsEntityRequest.getEnrollmentDate())){
+        if(studentsEntityRequest.getEnrollmentDate() != null && !studentsEntityRequest.getEnrollmentDate().toString().isEmpty() && !Objects.equals(studentEntityToUpdate.getEnrollmentDate(), studentsEntityRequest.getEnrollmentDate())){
             studentEntityToUpdate.setEnrollmentDate(studentsEntityRequest.getEnrollmentDate());
         }
         studentEntityToUpdate.setUpdated_at(Date.from(Instant.now()));
