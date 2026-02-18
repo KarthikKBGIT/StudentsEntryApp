@@ -26,7 +26,7 @@ public class SecurityConfiguration {
     public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) {
         return httpSecurity.csrf(customizer -> customizer.disable())
                 .authorizeHttpRequests(auth ->
-                        auth.requestMatchers(HttpMethod.POST, "/register").permitAll().
+                        auth.requestMatchers(HttpMethod.POST, "/api/register").permitAll().
                                 anyRequest().authenticated())
                 .formLogin(form -> form.permitAll().defaultSuccessUrl("/", true))
                 .httpBasic(Customizer.withDefaults())

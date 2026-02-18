@@ -2,6 +2,8 @@ package com.karthik.StudentEntryApp.service;
 
 import com.karthik.StudentEntryApp.entity.UsersEntity;
 import com.karthik.StudentEntryApp.error.EmailAlreadyExists;
+import com.karthik.StudentEntryApp.error.UserIDNotFound;
+import com.karthik.StudentEntryApp.error.UserNotFound;
 import com.karthik.StudentEntryApp.error.UsernameAlreadyExists;
 import com.karthik.StudentEntryApp.repository.UsersRepository;
 import lombok.extern.slf4j.Slf4j;
@@ -9,8 +11,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import javax.swing.text.html.Option;
-import java.util.List;
+import java.time.Instant;
+import java.util.Date;
 import java.util.Optional;
 
 @Service
@@ -35,6 +37,61 @@ public class UsersServiceImplementation implements UsersService {
             throw new EmailAlreadyExists("Email already exists: " + usersEntity.getEmail());
         }
         usersEntity.setPassword(passwordEncoder.encode(usersEntity.getPassword()));
+        usersEntity.setCreated_at(Date.from(Instant.now()));
         return usersRepository.save(usersEntity);
+    }
+
+    @Override
+    public UsersEntity getUserById(Long id) throws UserNotFound {
+        log.info("Retrieving user with id: " + id);
+        Optional<UsersEntity> userWithId = usersRepository.findById(id);
+        if(userWithId.isEmpty()){
+            throw new UserNotFound("User with id " + id + " not found");
+        }
+        return userWithId.get();
+    }
+
+    @Override
+    public UsersEntity updateUserById(Long id, UsersEntity usersEntity) throws UserNotFound, UserIDNotFound, UsernameAlreadyExists {
+        if(id == null){
+            log.info("User ID in the request path cannot be null");
+            throw new UserIDNotFound("User ID in the request path cannot be null");
+        }
+        log.info("Updating user with id: " + id);
+        log.info("Retrieving user with id: " + id);
+        Optional<UsersEntity> userEntityToBeUpdated = usersRepository.findById(id);
+        if(userEntityToBeUpdated.isEmpty()){
+            throw new UserNotFound("User with id " + id + " not found");
+        }
+        UsersEntity userToBeUpdated = userEntityToBeUpdated.get();
+        if(usersEntity.getUsername() != null){
+            log.error("Username cannot be updated");
+            throw new UsernameAlreadyExists("Username cannot be updated");
+        }
+        if(usersEntity.getPassword() != null && !usersEntity.getPassword().equals(userToBeUpdated.getPassword())){
+            userToBeUpdated.setPassword(passwordEncoder.encode(usersEntity.getPassword()));
+        }
+        if(usersEntity.getEmail() != null && !usersEntity.getEmail().equals(userToBeUpdated.getEmail())){
+            userToBeUpdated.setEmail(usersEntity.getEmail());
+        }
+        if(usersEntity.getRole() != null && !usersEntity.getRole().equals(userToBeUpdated.getRole())){
+            userToBeUpdated.setRole(usersEntity.getRole());
+        }
+        userToBeUpdated.setUpdated_at(Date.from(Instant.now()));
+        return usersRepository.save(userToBeUpdated);
+    }
+
+    @Override
+    public void deleteUserById(Long id) throws UserNotFound, UserIDNotFound {
+        log.info("Deleting user with id: " + id);
+        if(id == null){
+            log.info("User ID in the request path cannot be null");
+            throw new UserIDNotFound("User ID in the request path cannot be null");
+        }
+        Optional<UsersEntity> userWithId = usersRepository.findById(id);
+        if(userWithId.isEmpty()) {
+            throw new UserNotFound("User with id " + id + " not found");
+        }
+        usersRepository.deleteById(id);
     }
 }

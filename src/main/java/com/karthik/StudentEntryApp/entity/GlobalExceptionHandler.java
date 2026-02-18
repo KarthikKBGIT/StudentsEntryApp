@@ -57,4 +57,16 @@ public class GlobalExceptionHandler {
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(message);
     }
 
+    @ExceptionHandler(UserIDNotFound.class)
+    public ResponseEntity<ErrorMessage> userIDNotFoundExceptionHandler(UserIDNotFound e) {
+        ErrorMessage message = new ErrorMessage(HttpStatus.NOT_FOUND.value(), e.getMessage());
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(message);
+    }
+
+    @ExceptionHandler(UserNotFound.class)
+    public ResponseEntity<ErrorMessage> userNotFoundExceptionHandler(UserNotFound e) {
+        ErrorMessage message = new ErrorMessage(HttpStatus.NOT_FOUND.value(), e.getMessage());
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(message);
+    }
+
 }
