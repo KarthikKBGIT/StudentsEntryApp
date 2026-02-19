@@ -69,4 +69,10 @@ public class GlobalExceptionHandler {
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body(message);
     }
 
+    @ExceptionHandler(InvalidRole.class)
+    public ResponseEntity<ErrorMessage> invalidRoleExceptionHandler(InvalidRole e){
+        ErrorMessage message = new ErrorMessage(HttpStatus.BAD_REQUEST.value(), e.getMessage());
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(message);
+    }
+
 }

@@ -2,10 +2,7 @@ package com.karthik.StudentEntryApp.controller;
 
 
 import com.karthik.StudentEntryApp.entity.UsersEntity;
-import com.karthik.StudentEntryApp.error.EmailAlreadyExists;
-import com.karthik.StudentEntryApp.error.UserIDNotFound;
-import com.karthik.StudentEntryApp.error.UserNotFound;
-import com.karthik.StudentEntryApp.error.UsernameAlreadyExists;
+import com.karthik.StudentEntryApp.error.*;
 import com.karthik.StudentEntryApp.service.UsersServiceImplementation;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
@@ -21,7 +18,7 @@ public class UsersController {
     private UsersServiceImplementation usersService;
 
     @RequestMapping(value = "/register", method = RequestMethod.POST)
-    public UsersEntity registerUser(@Valid @RequestBody UsersEntity usersRequest) throws EmailAlreadyExists, UsernameAlreadyExists {
+    public UsersEntity registerUser(@Valid @RequestBody UsersEntity usersRequest) throws EmailAlreadyExists, UsernameAlreadyExists, InvalidRole {
         log.info("Received request to register user: " + usersRequest.getUsername());
         return usersService.saveUser(usersRequest);
     }

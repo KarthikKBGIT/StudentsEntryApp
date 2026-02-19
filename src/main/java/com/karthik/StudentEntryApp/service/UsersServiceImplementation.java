@@ -1,10 +1,7 @@
 package com.karthik.StudentEntryApp.service;
 
 import com.karthik.StudentEntryApp.entity.UsersEntity;
-import com.karthik.StudentEntryApp.error.EmailAlreadyExists;
-import com.karthik.StudentEntryApp.error.UserIDNotFound;
-import com.karthik.StudentEntryApp.error.UserNotFound;
-import com.karthik.StudentEntryApp.error.UsernameAlreadyExists;
+import com.karthik.StudentEntryApp.error.*;
 import com.karthik.StudentEntryApp.repository.UsersRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,7 +23,7 @@ public class UsersServiceImplementation implements UsersService {
     private UsersRepository usersRepository;
 
     @Override
-    public UsersEntity saveUser(UsersEntity usersEntity) throws UsernameAlreadyExists, EmailAlreadyExists {
+    public UsersEntity saveUser(UsersEntity usersEntity) throws UsernameAlreadyExists, EmailAlreadyExists, InvalidRole {
         log.info("Saving user: " + usersEntity.getUsername());
         Optional<UsersEntity> usersResultwithSameUsername = usersRepository.findByUsername(usersEntity.getUsername());
         Optional<UsersEntity> usersResultwithSameEmail = usersRepository.findByEmail(usersEntity.getEmail());
@@ -35,6 +32,13 @@ public class UsersServiceImplementation implements UsersService {
         }
         if (!usersResultwithSameEmail.isEmpty()) {
             throw new EmailAlreadyExists("Email already exists: " + usersEntity.getEmail());
+        }
+        if(usersEntity.getRole().equalsIgnoreCase("ADMIN") || usersEntity.getRole().equalsIgnoreCase("USER")){
+            usersEntity.setRole(usersEntity.getRole().toUpperCase());
+        }
+        else{
+            log.error("Invalid role: " + usersEntity.getRole() + ". Role must be either ADMIN or USER");
+            throw new InvalidRole("Invalid role: " + usersEntity.getRole() + ". Role must be either ADMIN or USER");
         }
         usersEntity.setPassword(passwordEncoder.encode(usersEntity.getPassword()));
         usersEntity.setCreated_at(Date.from(Instant.now()));

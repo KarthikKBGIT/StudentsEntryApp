@@ -2,14 +2,11 @@ package com.karthik.StudentEntryApp.service;
 
 
 import com.karthik.StudentEntryApp.entity.UsersEntity;
-import com.karthik.StudentEntryApp.error.EmailAlreadyExists;
-import com.karthik.StudentEntryApp.error.UserIDNotFound;
-import com.karthik.StudentEntryApp.error.UserNotFound;
-import com.karthik.StudentEntryApp.error.UsernameAlreadyExists;
+import com.karthik.StudentEntryApp.error.*;
 
 public interface UsersService {
 
-    public UsersEntity saveUser(UsersEntity usersEntity) throws UsernameAlreadyExists, EmailAlreadyExists;
+    public UsersEntity saveUser(UsersEntity usersEntity) throws UsernameAlreadyExists, EmailAlreadyExists, InvalidRole;
 
     public UsersEntity getUserById(Long id) throws UserNotFound;
 
