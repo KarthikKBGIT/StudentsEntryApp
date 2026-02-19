@@ -5,11 +5,16 @@ import com.karthik.StudentEntryApp.error.*;
 import com.karthik.StudentEntryApp.repository.UsersRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.time.Instant;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Optional;
 
 @Service
@@ -21,6 +26,12 @@ public class UsersServiceImplementation implements UsersService {
 
     @Autowired
     private UsersRepository usersRepository;
+
+    @Autowired
+    private AuthenticationManager authenticationManager;
+
+    @Autowired
+    private JWTService jwtService;
 
     @Override
     public UsersEntity saveUser(UsersEntity usersEntity) throws UsernameAlreadyExists, EmailAlreadyExists, InvalidRole {
@@ -104,5 +115,17 @@ public class UsersServiceImplementation implements UsersService {
             throw new UserNotFound("User with id " + id + " not found");
         }
         usersRepository.deleteById(id);
+    }
+
+    @Override
+    public Map<String, String> verifyUser(UsersEntity usersEntity) {
+        Authentication authentication =
+                authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(usersEntity.getUsername(),
+                        usersEntity.getPassword()));
+        Map<String,String> map = new HashMap<>();
+        if(authentication.isAuthenticated()){
+            map.put("token", jwtService.generateToken(usersEntity.getUsername()));
+        }
+        return map;
     }
 }

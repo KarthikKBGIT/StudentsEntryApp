@@ -4,6 +4,8 @@ package com.karthik.StudentEntryApp.service;
 import com.karthik.StudentEntryApp.entity.UsersEntity;
 import com.karthik.StudentEntryApp.error.*;
 
+import java.util.Map;
+
 public interface UsersService {
 
     public UsersEntity saveUser(UsersEntity usersEntity) throws UsernameAlreadyExists, EmailAlreadyExists, InvalidRole;
@@ -13,4 +15,6 @@ public interface UsersService {
     public UsersEntity updateUserById(Long id, UsersEntity usersEntity) throws UserNotFound, UserIDNotFound, UsernameAlreadyExists, InvalidRole;
 
     public void deleteUserById(Long id) throws UserNotFound, UserIDNotFound;
+
+    public Map<String, String> verifyUser(UsersEntity usersEntity);
 }
