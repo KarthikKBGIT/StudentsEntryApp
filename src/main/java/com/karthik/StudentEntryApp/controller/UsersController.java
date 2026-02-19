@@ -30,7 +30,7 @@ public class UsersController {
     }
 
     @RequestMapping(value = "/users/{id}", method = RequestMethod.PUT)
-    public UsersEntity updateUserById(@PathVariable Long id, @RequestBody UsersEntity userRequest) throws UserNotFound, UserIDNotFound, UsernameAlreadyExists {
+    public UsersEntity updateUserById(@PathVariable Long id, @RequestBody UsersEntity userRequest) throws UserNotFound, UserIDNotFound, UsernameAlreadyExists, InvalidRole {
         //I haven't added @Valid here because the user may want to update only one field and not all the fields, so I will handle the validation in the service layer.
         log.info("Received request to update user with id: " + id);
         return usersService.updateUserById(id, userRequest);

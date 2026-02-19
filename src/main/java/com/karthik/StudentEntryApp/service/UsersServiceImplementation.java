@@ -56,7 +56,7 @@ public class UsersServiceImplementation implements UsersService {
     }
 
     @Override
-    public UsersEntity updateUserById(Long id, UsersEntity usersEntity) throws UserNotFound, UserIDNotFound, UsernameAlreadyExists {
+    public UsersEntity updateUserById(Long id, UsersEntity usersEntity) throws UserNotFound, UserIDNotFound, UsernameAlreadyExists, InvalidRole {
         if(id == null){
             log.info("User ID in the request path cannot be null");
             throw new UserIDNotFound("User ID in the request path cannot be null");
@@ -79,6 +79,13 @@ public class UsersServiceImplementation implements UsersService {
             userToBeUpdated.setEmail(usersEntity.getEmail());
         }
         if(usersEntity.getRole() != null && !usersEntity.getRole().equals(userToBeUpdated.getRole())){
+            if(usersEntity.getRole().equalsIgnoreCase("ADMIN") || usersEntity.getRole().equalsIgnoreCase("USER")){
+                userToBeUpdated.setRole(usersEntity.getRole().toUpperCase());
+            }
+            else{
+                log.error("Invalid role: " + usersEntity.getRole() + ". Role must be either ADMIN or USER");
+                throw new InvalidRole("Invalid role: " + usersEntity.getRole() + ". Role must be either ADMIN or USER");
+            }
             userToBeUpdated.setRole(usersEntity.getRole());
         }
         userToBeUpdated.setUpdated_at(Date.from(Instant.now()));

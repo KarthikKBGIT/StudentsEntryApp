@@ -10,7 +10,7 @@ public interface UsersService {
 
     public UsersEntity getUserById(Long id) throws UserNotFound;
 
-    public UsersEntity updateUserById(Long id, UsersEntity usersEntity) throws UserNotFound, UserIDNotFound, UsernameAlreadyExists;
+    public UsersEntity updateUserById(Long id, UsersEntity usersEntity) throws UserNotFound, UserIDNotFound, UsernameAlreadyExists, InvalidRole;
 
     public void deleteUserById(Long id) throws UserNotFound, UserIDNotFound;
 }
