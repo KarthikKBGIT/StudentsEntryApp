@@ -12,10 +12,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.time.Instant;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 
 @Service
 @Slf4j
@@ -55,6 +52,13 @@ public class UsersServiceImplementation implements UsersService {
         usersEntity.setCreated_at(Date.from(Instant.now()));
         return usersRepository.save(usersEntity);
     }
+
+    @Override
+    public List<UsersEntity> getAllUsers() {
+        log.info("Retrieving all users");
+        return usersRepository.findAll();
+    }
+
 
     @Override
     public UsersEntity getUserById(Long id) throws UserNotFound {

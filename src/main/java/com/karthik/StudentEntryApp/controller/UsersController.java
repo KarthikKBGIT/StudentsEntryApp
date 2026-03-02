@@ -9,6 +9,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.Map;
 
 @Slf4j
@@ -29,6 +30,12 @@ public class UsersController {
     public Map<String, String> loginUser(@RequestBody UsersEntity userRequest){
         log.info("Received request to login user: " + userRequest.getUsername());
         return usersService.verifyUser(userRequest);
+    }
+
+    @RequestMapping(value = "/users", method = RequestMethod.GET)
+    public List<UsersEntity> getAllUsers(){
+        log.info("Received request to get all users");
+        return usersService.getAllUsers();
     }
 
     @RequestMapping(value = "/users/{id}", method = RequestMethod.GET)
