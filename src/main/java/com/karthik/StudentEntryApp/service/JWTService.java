@@ -10,7 +10,7 @@ import javax.crypto.SecretKey;
 import java.nio.charset.StandardCharsets;
 import java.security.Key;
 import java.security.NoSuchAlgorithmException;
-import java.sql.Date;
+import java.util.Date;
 import java.time.Instant;
 import java.util.Base64;
 import java.util.HashMap;
@@ -59,7 +59,9 @@ public class JWTService {
     }
 
     public boolean validateToken(String token, UserDetails userDetails){
-        return extractUsername(token).equals(userDetails.getUsername());
+        boolean isUsernameValid = extractUsername(token).equals(userDetails.getUsername());
+        boolean isTokenExpired = Jwts.parser().setSigningKey(getKey()).build().parseClaimsJws(token).getPayload().getExpiration().before(new Date());
+        return isUsernameValid && !isTokenExpired;
     }
 
 }
