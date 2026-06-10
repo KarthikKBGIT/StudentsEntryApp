@@ -5,6 +5,7 @@ import com.karthik.StudentEntryApp.error.*;
 import com.karthik.StudentEntryApp.repository.StudentsRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -41,6 +42,7 @@ public class StudentsService implements BaseService {
     }
 
     @Override
+    @Cacheable(value = "studentsEntity", key = "#id")
     public StudentsEntity fetchStudentById(Long id) throws StudentNotFound {
 
         Optional<StudentsEntity> studentsEntity = studentsRepository.findById(id);
